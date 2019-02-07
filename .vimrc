@@ -24,3 +24,11 @@ set shiftwidth=2
 set shiftround
 set expandtab
 
+
+" color scheme
+set term=screen-256color
+set t_ut=
+syntax enable
+set background=dark
+" let g:solarized_termcolors=256
+colorscheme solarized
