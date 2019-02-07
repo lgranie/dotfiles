@@ -12,3 +12,15 @@ noremap <Right> <NOP>
 set number
 set relativenumber
 
+" Disable swap and backup files
+set nobackup
+set nowritebackup
+set noswapfile
+
+" Use spaces no TABs
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set shiftround
+set expandtab
+
