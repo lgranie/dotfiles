@@ -24,6 +24,31 @@ set shiftwidth=2
 set shiftround
 set expandtab
 
+set history=50
+set showcmd       " display incomplete command
+set laststatus=2  " Always display the status line
+set autowrite     " Automatically :write before running commands
+set autoread      " Reload files changed outside vim
+
+set cursorline    " highlight the current line
+set visualbell    " stop that ANNOYING beeping
+set wildmenu
+set wildmode=list:longest,full
+
+" Split
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+set splitbelow
+set splitright
+
+" Auto resize Vim splits to active split
+set winwidth=104
+set winheight=5
+set winminheight=5
+set winheight=999
 
 " color scheme
 set term=screen-256color
