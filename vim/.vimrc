@@ -58,13 +58,11 @@ set background=dark
 " let g:solarized_termcolors=256
 colorscheme solarized
 
-" ctrlp.vim
-set runtimepath^=~/.vim/bundle/ctrlp.vim
+" plugin path
+set runtimepath=~/.vim/bundle/ctrlp.vim,~/.vim/bundle/vim-tmux-navigator
+
+"ctrlp.vim
 let g:ctrlp_custom_ignore = {
      \ 'dir': '\v[\/](\.git|dist|target|node_modules|bower_components)$',
-     \ 'file': '\.(exe|so|dll|class)$',
    \ }
-
-" vim-tmux-navigator
-set runtimepath^=~/.vim/bundle/vim-tmux-navigator
 
