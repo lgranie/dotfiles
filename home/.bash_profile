@@ -1,7 +1,3 @@
-. ~/.swf_bashrc
-. ~/.swf_bash_aliases
-
-
 if [ -f ~/.bashrc ]
 then
     . ~/.bashrc
@@ -11,4 +7,7 @@ if [ -f ~/.bash_aliases ]
 then
     . ~/.bash_aliases
 fi
+
+. ~/.local_bashrc
+. ~/.local_bash_aliases
 
