@@ -15,3 +15,5 @@ function mci () {
   mvn -T 4 clean install
 }
 
+. ~/.local_bash_aliases
+
