@@ -1,7 +1,15 @@
-alias ll='ls -l --color=auto'
-alias la='ls -A --color=auto'
-alias lla='ls -Al --color=auto'
-alias l='ls -CF --color=auto'
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+  test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+  alias ll='ls -l --color=auto'
+  alias la='ls -A --color=auto'
+  alias lla='ls -Al --color=auto'
+  alias l='ls -CF --color=auto'
+
+  alias grep='grep --color=auto'
+  alias fgrep='fgrep --color=auto'
+  alias egrep='egrep --color=auto'
+fi
 
 alias rm='rm -i'
 alias mv='mv -i'
@@ -15,5 +23,7 @@ function mci () {
   mvn -T 4 clean install
 }
 
+if [ -f ~/.local_bash_aliases ]; then
 . ~/.local_bash_aliases
+fi
 

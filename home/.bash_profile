@@ -1,3 +1,7 @@
+if [ -f ~/.local_bash_profile ]; then
+  . ~/.local_bash_profile
+fi
+
 if [ -f ~/.bashrc ]
 then
     . ~/.bashrc

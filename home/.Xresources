@@ -1,1 +1,3 @@
-#include "../solarized/xresources/Xresources.dark"
+#include "./dotfiles/solarized/xresources/Xresources.dark"
+#include "./.local_Xresources"
+
