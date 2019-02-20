@@ -1,4 +1,7 @@
 URxvt*scrollBar: false
 URxvt*loginShell: true
 URxvt*termName: screen-256color
+URxvt*inheritPixmap: true
+URxvt*transparent: true
+URxvt*shading: 20
 
