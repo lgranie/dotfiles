@@ -3,11 +3,11 @@
 #
 
 # terminal emulator
-ctrl + Return
-	rxvt
+super + Return
+	urxvt
 
 # program launcher
-ctrl + @space
+super + @space
 	dmenu_run
 
 # make sxhkd reload its configuration files:
