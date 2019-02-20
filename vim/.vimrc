@@ -59,10 +59,14 @@ colorscheme solarized
 set guifont=DejaVu\ Sans\ Mono:h11
 
 " plugin path
-set runtimepath+=$HOME/.vim/bundle/ctrlp.vim,$HOME/.vim/bundle/vim-tmux-navigator,$HOME/.vim/bundle/vim-airline
+set runtimepath+=$HOME/.vim/bundle/ctrlp.vim,$HOME/.vim/bundle/vim-tmux-navigator,$HOME/.vim/bundle/vim-airline,$HOME/.vim/bundle/vim-airline-themes
 
 " ctrlp.vim
 let g:ctrlp_custom_ignore = {
      \ 'dir': '\v[\/](\.git|dist|target|node_modules|bower_components)$',
    \ }
+
+" vim-airline
+let g:airline_theme='solarized'
+let g:airline_solarized_bg='dark'
 
