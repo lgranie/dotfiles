@@ -1,0 +1,4 @@
+URxvt*scrollBar: false
+URxvt*loginShell: true
+URxvt*termName: screen-256color
+

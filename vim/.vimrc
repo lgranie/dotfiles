@@ -51,19 +51,17 @@ set winminheight=5
 set winheight=999
 
 " color scheme
-" set term=screen-256color
-" set t_ut=
 syntax enable
 set background=dark
-" let g:solarized_termcolors=256
 colorscheme solarized
-" let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-" let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+
+" font
+set guifont=DejaVu\ Sans\ Mono:h11
 
 " plugin path
-set runtimepath=~/.vim/bundle/ctrlp.vim,~/.vim/bundle/vim-tmux-navigator
+set runtimepath+=$HOME/.vim/bundle/ctrlp.vim,$HOME/.vim/bundle/vim-tmux-navigator,$HOME/.vim/bundle/vim-airline
 
-"ctrlp.vim
+" ctrlp.vim
 let g:ctrlp_custom_ignore = {
      \ 'dir': '\v[\/](\.git|dist|target|node_modules|bower_components)$',
    \ }
