@@ -51,7 +51,11 @@ set winminheight=5
 set winheight=999
 
 " plugin path
-set runtimepath+=$HOME/.vim/bundle/ctrlp.vim,$HOME/.vim/bundle/vim-tmux-navigator,$HOME/.vim/bundle/vim-airline,$HOME/.vim/bundle/vim-airline-themes,$HOME/.vim/bundle/gruvbox
+set runtimepath+=$HOME/.vim/bundle/ctrlp.vim
+set runtimepath+=$HOME/.vim/bundle/vim-tmux-navigator
+set runtimepath+=$HOME/.vim/bundle/vim-airline
+set runtimepath+=$HOME/.vim/bundle/vim-airline-themes
+set runtimepath+=$HOME/.vim/bundle/gruvbox
 
 " color scheme
 syntax enable

@@ -1,0 +1,17 @@
+!Solarized
+!#include "./dotfiles/solarized/xresources/Xresources.dark"
+
+!xft
+Xft.dpi: 96
+Xft.antialias: true
+Xft.rgba: rgb
+Xft.hinting: true
+Xft.hinstyle: hintfull
+
+!Gruvbox
+#include "./dotfiles/gruvbox/gruvbox-contrib/xresources/gruvbox-dark.xresources"
+
+#include "./dotfiles/Xresources/rxvt-unicode"
+#include "./dotfiles/gruvbox/gruvbox-contrib/urxvt256/gruvbox-urxvt256.xresources"
+
+
