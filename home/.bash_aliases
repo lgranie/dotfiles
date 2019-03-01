@@ -29,3 +29,10 @@ if [ -f ~/.local_bash_aliases ]; then
 . ~/.local_bash_aliases
 fi
 
+function start_dev() {
+  cd $1 && \
+  tmux new session \; \
+  send-keys 'vim' C-m \; \
+  split-window -v -p 75 \;
+}
+
