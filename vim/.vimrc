@@ -50,9 +50,6 @@ set winheight=5
 set winminheight=5
 set winheight=999
 
-" font
-set guifont=DejaVu\ Sans\ Mono:h11
-
 " plugin path
 set runtimepath+=$HOME/.vim/bundle/ctrlp.vim,$HOME/.vim/bundle/vim-tmux-navigator,$HOME/.vim/bundle/vim-airline,$HOME/.vim/bundle/vim-airline-themes,$HOME/.vim/bundle/gruvbox
 
@@ -61,10 +58,19 @@ syntax enable
 set background=dark
 colorscheme gruvbox
 
+" font
+set guifont=DejaVu\ Sans\ Mono:h11
+
 " ctrlp.vim
+" font
+set guifont=DejaVu\ Sans\ Mono:h11
+
 let g:ctrlp_custom_ignore = {
      \ 'dir': '\v[\/](\.git|dist|target|node_modules|bower_components)$',
    \ }
+
+" ctrlp + ctags
+nnoremap <leader>. :CtrlPTag<cr>
 
 " vim-airline
 let g:airline_powerline_fonts = 1
