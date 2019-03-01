@@ -13,3 +13,9 @@
 [submodule "vim/.vim/bundle/vim-airline-themes"]
 	path = vim/.vim/bundle/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
+[submodule "vim/.vim/bundle/gruvbox"]
+	path = vim/.vim/bundle/gruvbox
+	url = https://github.com/morhetz/gruvbox.git
+[submodule "gruvbox/gruvbox-contrib"]
+	path = gruvbox/gruvbox-contrib
+	url = https://github.com/morhetz/gruvbox-contrib.git

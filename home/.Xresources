@@ -1,3 +1,9 @@
-#include "./dotfiles/solarized/xresources/Xresources.dark"
-#include "./dotfiles/Xresources/rxvt-unicode"
+!Solarized
+!#include "./dotfiles/solarized/xresources/Xresources.dark"
+
+!Gruvbox
+#include "./dotfiles/gruvbox/gruvbox-contrib/xresources/gruvbox-dark.xresources"
+
+!#include "./dotfiles/Xresources/rxvt-unicode"
+
 

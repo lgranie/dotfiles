@@ -31,8 +31,8 @@ fi
 
 function start_dev() {
   cd $1 && \
-  tmux new session \; \
+  tmux attach || tmux new-session \; \
   send-keys 'vim' C-m \; \
-  split-window -v -p 75 \;
+  split-window -h -p 25 \;
 }
 

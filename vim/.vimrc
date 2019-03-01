@@ -50,16 +50,16 @@ set winheight=5
 set winminheight=5
 set winheight=999
 
-" color scheme
-syntax enable
-set background=dark
-colorscheme solarized
-
 " font
 set guifont=DejaVu\ Sans\ Mono:h11
 
 " plugin path
-set runtimepath+=$HOME/.vim/bundle/ctrlp.vim,$HOME/.vim/bundle/vim-tmux-navigator,$HOME/.vim/bundle/vim-airline,$HOME/.vim/bundle/vim-airline-themes
+set runtimepath+=$HOME/.vim/bundle/ctrlp.vim,$HOME/.vim/bundle/vim-tmux-navigator,$HOME/.vim/bundle/vim-airline,$HOME/.vim/bundle/vim-airline-themes,$HOME/.vim/bundle/gruvbox
+
+" color scheme
+syntax enable
+set background=dark
+colorscheme gruvbox
 
 " ctrlp.vim
 let g:ctrlp_custom_ignore = {
@@ -68,6 +68,6 @@ let g:ctrlp_custom_ignore = {
 
 " vim-airline
 let g:airline_powerline_fonts = 1
-let g:airline_theme='solarized'
-let g:airline_solarized_bg='dark'
+let g:airline_theme='gruvbox'
+" let g:airline_solarized_bg='dark'
 
