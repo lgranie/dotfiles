@@ -66,9 +66,6 @@ colorscheme gruvbox
 set guifont=DejaVu\ Sans\ Mono:h11
 
 " ctrlp.vim
-" font
-set guifont=DejaVu\ Sans\ Mono:h11
-
 let g:ctrlp_custom_ignore = {
      \ 'dir': '\v[\/](\.git|dist|target|node_modules|bower_components)$',
    \ }
