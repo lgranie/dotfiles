@@ -19,3 +19,12 @@
 [submodule "gruvbox/gruvbox-contrib"]
 	path = gruvbox/gruvbox-contrib
 	url = https://github.com/morhetz/gruvbox-contrib.git
+[submodule "vim/.vim/bundle/async.vim"]
+	path = vim/.vim/bundle/async.vim
+	url = https://github.com/prabirshrestha/async.vim.git
+[submodule "vim/.vim/bundle/vim-lsp"]
+	path = vim/.vim/bundle/vim-lsp
+	url = https://github.com/prabirshrestha/vim-lsp.git
+[submodule "vim/.vim/bundle/vim-lsp-java"]
+	path = vim/.vim/bundle/vim-lsp-java
+	url = https://github.com/lgranie/vim-lsp-java.git

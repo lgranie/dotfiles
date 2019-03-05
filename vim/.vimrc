@@ -51,11 +51,26 @@ set winminheight=5
 set winheight=999
 
 " plugin path
-set runtimepath+=$HOME/.vim/bundle/ctrlp.vim
 set runtimepath+=$HOME/.vim/bundle/vim-tmux-navigator
 set runtimepath+=$HOME/.vim/bundle/vim-airline
 set runtimepath+=$HOME/.vim/bundle/vim-airline-themes
 set runtimepath+=$HOME/.vim/bundle/gruvbox
+
+set runtimepath+=$HOME/.vim/bundle/ctrlp.vim
+
+" vim-lsp-java
+let g:vim_lsp_java = {
+  \ 'eclipsejdtls' : {
+    \ 'repository' : '/home/lgranie/opt/eclipse.jdt.ls/org.eclipse.jdt.ls.product/target/repository',
+    \ 'version' : '1.5.300.v20190213-1655',
+    \ 'config' : 'config_linux',
+    \ 'workspace' : '/mnt/c/workspace-poc',
+  \ },
+\ }
+
+set runtimepath+=$HOME/.vim/bundle/async.vim
+set runtimepath+=$HOME/.vim/bundle/vim-lsp
+set runtimepath+=$HOME/.vim/bundle/vim-lsp-java
 
 " color scheme
 syntax enable
@@ -67,8 +82,8 @@ set guifont=DejaVu\ Sans\ Mono:h11
 
 " ctrlp.vim
 let g:ctrlp_custom_ignore = {
-     \ 'dir': '\v[\/](\.git|dist|target|node_modules|bower_components)$',
-   \ }
+  \ 'dir': '\v[\/](\.git|dist|target|node_modules|bower_components)$',
+\ }
 
 " ctrlp + ctags
 nnoremap <leader>. :CtrlPTag<cr>
