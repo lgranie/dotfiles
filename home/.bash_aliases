@@ -16,6 +16,7 @@ fi
 alias rm='rm -i'
 alias mv='mv -i'
 alias le='less'
+alias du='du -h -d 1'
 
 function mcist () {
   mvn -T 4 clean install -DskipTests
