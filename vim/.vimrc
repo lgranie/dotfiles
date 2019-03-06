@@ -58,19 +58,23 @@ set runtimepath+=$HOME/.vim/bundle/gruvbox
 
 set runtimepath+=$HOME/.vim/bundle/ctrlp.vim
 
-" vim-lsp-java
-let g:vim_lsp_java = {
-  \ 'eclipsejdtls' : {
-    \ 'repository' : '/home/lgranie/opt/eclipse.jdt.ls/org.eclipse.jdt.ls.product/target/repository',
-    \ 'version' : '1.5.300.v20190213-1655',
-    \ 'config' : 'config_linux',
-    \ 'workspace' : '/mnt/c/workspace-poc',
-  \ },
-\ }
-
 set runtimepath+=$HOME/.vim/bundle/async.vim
 set runtimepath+=$HOME/.vim/bundle/vim-lsp
 set runtimepath+=$HOME/.vim/bundle/vim-lsp-java
+
+" vim-lsp
+let g:lsp_log_verbose = 1
+let g:lsp_log_file = expand('~/vim-lsp.log')
+
+" vim-lsp-java
+let g:vim_lsp_java = {
+  \ 'eclipse_jdt_ls' : {
+    \ 'repository': expand('~/opt/eclipse.jdt.ls/org.eclipse.jdt.ls.product/target/repository'),
+    \ 'version': '1.5.300.v20190213-1655',
+    \ 'config': 'config_linux',
+    \ 'workspace': '/mnt/c/workspace-poc',
+  \ },
+\ }
 
 " color scheme
 syntax enable
