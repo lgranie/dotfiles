@@ -59,6 +59,8 @@ set runtimepath+=$HOME/.vim/bundle/gruvbox
 set runtimepath+=$HOME/.vim/bundle/ctrlp.vim
 
 set runtimepath+=$HOME/.vim/bundle/async.vim
+set runtimepath+=$HOME/.vim/bundle/asyncomplete.vim
+set runtimepath+=$HOME/.vim/bundle/asyncomplete-lsp.vim
 set runtimepath+=$HOME/.vim/bundle/vim-lsp
 set runtimepath+=$HOME/.vim/bundle/vim-lsp-java
 

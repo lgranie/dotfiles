@@ -28,3 +28,9 @@
 [submodule "vim/.vim/bundle/vim-lsp-java"]
 	path = vim/.vim/bundle/vim-lsp-java
 	url = https://github.com/lgranie/vim-lsp-java.git
+[submodule "vim/.vim/bundle/asyncomplete.vim"]
+	path = vim/.vim/bundle/asyncomplete.vim
+	url = https://github.com/prabirshrestha/asyncomplete.vim.git
+[submodule "vim/.vim/bundle/asyncomplete-lsp.vim"]
+	path = vim/.vim/bundle/asyncomplete-lsp.vim
+	url = https://github.com/prabirshrestha/asyncomplete-lsp.vim.git
