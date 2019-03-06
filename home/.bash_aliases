@@ -29,10 +29,19 @@ if [ -f ~/.local_bash_aliases ]; then
 . ~/.local_bash_aliases
 fi
 
-function start_dev() {
+function start_dev () {
   cd $1 && \
   tmux attach || tmux new-session \; \
   send-keys 'vim' C-m \; \
-  split-window -v -p 20 \;
+  split-window -v -p 16 \;
+}
+
+function udist () {
+  sudo apt-get update;
+  sudo apt-get -u dist-upgrade;
+  sudo apt-get -u upgrade;
+  sudo apt-get --purge autoremove;
+  sudo apt-get clean;
+  deborphan;
 }
 
