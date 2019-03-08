@@ -1,0 +1,11 @@
+[user]
+  email = laurent.granie@gmail.com
+  name = lgranie
+[status]
+  submoduleSummary = true
+[diff]
+  submodule = log
+[fetch]
+  recurseSubmodules = on-demand
+[include]
+  path = ~/.local_gitconfig
