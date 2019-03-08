@@ -99,3 +99,6 @@ let g:airline_powerline_fonts = 1
 let g:airline_theme='gruvbox'
 " let g:airline_solarized_bg='dark'
 
+" indent xml
+au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
+
