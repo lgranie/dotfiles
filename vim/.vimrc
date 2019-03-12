@@ -17,7 +17,7 @@ set nobackup
 set nowritebackup
 set noswapfile
 
-" Use spaces no TABs
+" Indent / Use spaces no TABs
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
@@ -100,5 +100,5 @@ let g:airline_theme='gruvbox'
 " let g:airline_solarized_bg='dark'
 
 " indent xml
-au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
+au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ --noblanks\ -\ 2>/dev/null
 
