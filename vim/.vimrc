@@ -17,12 +17,13 @@ set nobackup
 set nowritebackup
 set noswapfile
 
-" Use spaces no TABs
+" Autoindent / Use spaces no TABs
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 set shiftround
 set expandtab
+set autoindent
 
 set history=50
 set showcmd       " display incomplete command
@@ -70,7 +71,7 @@ set runtimepath+=$HOME/.vim/bundle/vim-lsp-java
 
 " vim-lsp-java
 let g:vim_lsp_java = {
-  \ 'eclipse_jdt_ls' : {
+  \ 'eclipse_jdtls' : {
     \ 'repository': expand('~/opt/eclipse.jdt.ls/org.eclipse.jdt.ls.product/target/repository'),
     \ 'version': '1.5.300.v20190213-1655',
     \ 'config': 'config_linux',
