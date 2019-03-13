@@ -34,7 +34,8 @@ function start_dev () {
   cd $1 && \
   tmux attach || tmux new-session \; \
   send-keys 'vim' C-m \; \
-  split-window -v -p 16 \;
+  split-window -v -p 16 \; \
+  select-pane -t 1 \;
 }
 
 function udist () {
