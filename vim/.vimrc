@@ -65,6 +65,8 @@ set runtimepath+=$HOME/.vim/bundle/asyncomplete-lsp.vim
 set runtimepath+=$HOME/.vim/bundle/vim-lsp
 set runtimepath+=$HOME/.vim/bundle/vim-lsp-java
 
+set runtimepath+=$HOME/.vim/bundle/vim-jdb
+
 " vim-lsp
 "let g:lsp_log_verbose = 1
 "let g:lsp_log_file = expand('~/vim-lsp.log')
