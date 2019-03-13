@@ -26,6 +26,10 @@ function mci () {
   mvn -T 4 clean install
 }
 
+function msbd () {
+  mvn spring-boot:run -Dspring-boot.run.jvmArguments="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005"
+}
+
 if [ -f ~/.local_bash_aliases ]; then
 . ~/.local_bash_aliases
 fi
