@@ -35,8 +35,9 @@ if [ -f ~/.local_bash_aliases ]; then
 fi
 
 function start_dev () {
+  SESSION_NAME=`basename $1`;
   cd $1 && \
-  tmux attach || tmux new-session \; \
+  tmux attach -t $SESSION_NAME || tmux new-session -t $SESSION_NAME \; \
   send-keys 'vim' C-m \; \
   split-window -v -p 16 \; \
   select-pane -t 1 \;
