@@ -103,7 +103,7 @@ let g:airline_theme='gruvbox'
 " let g:airline_solarized_bg='dark'
 
 " indent xml
-au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ --noblanks\ -\ 2>/dev/null
+au FileType xml,xslt setlocal equalprg=xmllint\ --format\ --recover\ --noblanks\ -\ 2>/dev/null
 
 " indent json
 au FileType json setlocal equalprg=jq\ .\ 2>/dev/null
