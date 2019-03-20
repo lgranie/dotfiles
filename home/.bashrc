@@ -2,6 +2,9 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+# mode vi
+set -o vi
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -110,3 +113,4 @@ XMLLINT_INDENT=
 #if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
 #  tmux a -t default || exec tmux new -s default && exit;
 #fi
+
