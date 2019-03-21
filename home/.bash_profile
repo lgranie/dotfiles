@@ -1,5 +1,5 @@
-if [ -f ~/.local_bash_profile ]; then
-  . ~/.local_bash_profile
+if [ -f ~/.config/local/bash_profile ]; then
+  . ~/.config/local/bash_profile
 fi
 
 if [ -f ~/.bashrc ]; then

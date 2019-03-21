@@ -30,8 +30,8 @@ function msbd () {
   mvn spring-boot:run -Dspring-boot.run.jvmArguments="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005"
 }
 
-if [ -f ~/.local_bash_aliases ]; then
-. ~/.local_bash_aliases
+if [ -f ~/.config/local/bash_aliases ]; then
+. ~/.config/local/bash_aliases
 fi
 
 function start_dev () {

@@ -94,8 +94,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
-if [ -f ~/.local_bashrc ]; then
-  . ~/.local_bashrc
+if [ -f ~/.config/local/bashrc ]; then
+  . ~/.config/local/bashrc
 fi
 
 # Powerline

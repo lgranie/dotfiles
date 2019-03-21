@@ -8,7 +8,7 @@
 [fetch]
   recurseSubmodules = on-demand
 [include]
-  path = ~/.local_gitconfig
+  path = ~/.config/local/gitconfig
 [merge]
 	tool = vimdiff
 	conflictstyle = diff3
