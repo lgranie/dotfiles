@@ -46,10 +46,10 @@ set splitbelow
 set splitright
 
 " Auto resize Vim splits to active split
-set winwidth=104
-set winheight=5
-set winminheight=5
+set winwidth=130
 set winheight=999
+set winminwidth=80
+set winminheight=5
 
 " plugin path
 set runtimepath+=$HOME/.vim/bundle/vim-tmux-navigator
@@ -102,7 +102,11 @@ let g:airline_powerline_fonts = 1
 let g:airline_theme='gruvbox'
 " let g:airline_solarized_bg='dark'
 
-" indent xml
+" xml folding
+let g:xml_syntax_folding=1
+au FileType xml,xslt setlocal foldmethod=syntax
+
+" xml indent
 au FileType xml,xslt setlocal equalprg=xmllint\ --format\ --recover\ --noblanks\ -\ 2>/dev/null
 
 " indent json
