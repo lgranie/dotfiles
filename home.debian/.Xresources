@@ -7,6 +7,6 @@
 !Gruvbox
 #include "./dotfiles/gruvbox/gruvbox-contrib/xresources/gruvbox-dark.xresources"
 
-#include "./dotfiles/Xresources/rxvt-unicode"
+#include "./dotfiles/Xresources/urxvt-unicode"
 #include "./dotfiles/gruvbox/gruvbox-contrib/urxvt256/gruvbox-urxvt256.xresources"
 
