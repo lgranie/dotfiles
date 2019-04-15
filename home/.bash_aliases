@@ -18,6 +18,12 @@ alias mv='mv -i'
 alias le='less'
 alias du='du -h -d 1'
 
+# git
+alias gmv='git mv'
+alias gac='git commit -am'
+alias gstatus='git status'
+alias gusmom='git submodule foreach git pull origin master'
+
 function mcist () {
   mvn -T 4 clean install -DskipTests
 }
