@@ -94,10 +94,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-if [ -f ~/.config/local/bashrc ]; then
-  . ~/.config/local/bashrc
-fi
-
 # Powerline
 if [ -f `which powerline-daemon` ]; then
   powerline-daemon -q
@@ -109,8 +105,16 @@ fi
 # xmllint
 XMLLINT_INDENT=  
 
+if [ -f ~/.config/local/bashrc ]; then
+  . ~/.config/local/bashrc
+fi
+
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
 # Launch tmux at start
-#if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-#  tmux a -t default || exec tmux new -s default && exit;
-#fi
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  tmux a -t default || exec tmux new -s default && exit;
+fi
 

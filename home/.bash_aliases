@@ -18,6 +18,10 @@ alias mv='mv -i'
 alias le='less'
 alias du='du -h -d 1'
 
+function d2u () {
+  sed -i 's/\r//' $1
+}
+
 # git
 alias gmv='git mv'
 alias gac='git commit -am'
@@ -36,10 +40,6 @@ function msbd () {
   mvn spring-boot:run -Dspring-boot.run.jvmArguments="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005"
 }
 
-if [ -f ~/.config/local/bash_aliases ]; then
-. ~/.config/local/bash_aliases
-fi
-
 function start_dev () {
   SESSION_NAME=`basename $1`;
   cd $1 && \
@@ -57,4 +57,8 @@ function udist () {
   sudo apt-get clean;
   deborphan;
 }
+
+if [ -f ~/.config/local/bash_aliases ]; then
+. ~/.config/local/bash_aliases
+fi
 
