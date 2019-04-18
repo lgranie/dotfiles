@@ -37,3 +37,6 @@
 [submodule "vim/.vim/bundle/vim-jdb"]
 	path = vim/.vim/bundle/vim-jdb
 	url = https://gitlab.com/Dica-Developer/vim-jdb.git
+[submodule "gruvbox/tmux-gruvbox"]
+	path = gruvbox/tmux-gruvbox
+	url = https://github.com/egel/tmux-gruvbox.git
