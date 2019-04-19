@@ -40,3 +40,6 @@
 [submodule "gruvbox/tmux-gruvbox"]
 	path = gruvbox/tmux-gruvbox
 	url = https://github.com/egel/tmux-gruvbox.git
+[submodule "vim/.vim/bundle/vim-lsp-typescript"]
+	path = vim/.vim/bundle/vim-lsp-typescript
+	url = https://github.com/ryanolsonx/vim-lsp-typescript.git
