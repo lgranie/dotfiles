@@ -31,9 +31,6 @@
 [submodule "vim/.vim/bundle/asyncomplete-lsp.vim"]
 	path = vim/.vim/bundle/asyncomplete-lsp.vim
 	url = https://github.com/prabirshrestha/asyncomplete-lsp.vim.git
-[submodule "vim/.vim/bundle/ctrlp.vim"]
-	path = vim/.vim/bundle/ctrlp.vim
-	url = https://github.com/ctrlpvim/ctrlp.vim.git
 [submodule "vim/.vim/bundle/vim-jdb"]
 	path = vim/.vim/bundle/vim-jdb
 	url = https://gitlab.com/Dica-Developer/vim-jdb.git
