@@ -57,8 +57,6 @@ set runtimepath+=$HOME/.vim/bundle/vim-airline
 set runtimepath+=$HOME/.vim/bundle/vim-airline-themes
 set runtimepath+=$HOME/.vim/bundle/gruvbox
 
-set runtimepath+=$HOME/.vim/bundle/ctrlp.vim
-
 set runtimepath+=$HOME/.vim/bundle/async.vim
 set runtimepath+=$HOME/.vim/bundle/asyncomplete.vim
 set runtimepath+=$HOME/.vim/bundle/asyncomplete-lsp.vim
@@ -90,18 +88,9 @@ colorscheme gruvbox
 " font
 set guifont=DejaVu\ Sans\ Mono:h11
 
-" ctrlp.vim
-let g:ctrlp_custom_ignore = {
-  \ 'dir': '\v[\/](\.git|dist|target|node_modules|bower_components)$',
-\ }
-
-" ctrlp + ctags
-nnoremap <leader>. :CtrlPTag<cr>
-
 " vim-airline
 let g:airline_powerline_fonts = 1
 let g:airline_theme='gruvbox'
-" let g:airline_solarized_bg='dark'
 
 " xml folding
 let g:xml_syntax_folding=1
@@ -112,3 +101,4 @@ au FileType xml,xslt setlocal equalprg=xmllint\ --format\ --recover\ --noblanks\
 
 " indent json
 au FileType json setlocal equalprg=jq\ .\ 2>/dev/null
+
