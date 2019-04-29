@@ -1,9 +1,6 @@
 [submodule "vim/.vim/bundle/vim-tmux-navigator"]
 	path = vim/.vim/bundle/vim-tmux-navigator
 	url = https://github.com/christoomey/vim-tmux-navigator.git
-[submodule "solarized/xresources"]
-	path = solarized/xresources
-	url = https://github.com/solarized/xresources.git
 [submodule "vim/.vim/bundle/vim-airline"]
 	path = vim/.vim/bundle/vim-airline
 	url = https://github.com/vim-airline/vim-airline

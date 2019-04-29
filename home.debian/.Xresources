@@ -1,6 +1,3 @@
-!Solarized
-!#include "./dotfiles/solarized/xresources/Xresources.dark"
-
 !xft
 #include "./dotfiles/Xresources/xft"
 
