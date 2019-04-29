@@ -37,3 +37,6 @@
 [submodule "vim/.vim/bundle/vim-lsp-typescript"]
 	path = vim/.vim/bundle/vim-lsp-typescript
 	url = https://github.com/ryanolsonx/vim-lsp-typescript.git
+[submodule "vim/.vim/bundle/fzf.vim"]
+	path = vim/.vim/bundle/fzf.vim
+	url = https://github.com/junegunn/fzf.vim.git

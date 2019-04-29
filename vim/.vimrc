@@ -57,6 +57,9 @@ set runtimepath+=$HOME/.vim/bundle/vim-airline
 set runtimepath+=$HOME/.vim/bundle/vim-airline-themes
 set runtimepath+=$HOME/.vim/bundle/gruvbox
 
+set runtimepath+=/usr/share/doc/fzf/examples
+set runtimepath+=$HOME/.vim/bundle/fzf.vim
+
 set runtimepath+=$HOME/.vim/bundle/async.vim
 set runtimepath+=$HOME/.vim/bundle/asyncomplete.vim
 set runtimepath+=$HOME/.vim/bundle/asyncomplete-lsp.vim
