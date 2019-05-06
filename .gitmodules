@@ -40,3 +40,6 @@
 [submodule "vim/.vim/bundle/fzf.vim"]
 	path = vim/.vim/bundle/fzf.vim
 	url = https://github.com/junegunn/fzf.vim.git
+[submodule "vim/.vim/bundle/vim-lsp-bash"]
+	path = vim/.vim/bundle/vim-lsp-bash
+	url = https://github.com/lgranie/vim-lsp-bash.git

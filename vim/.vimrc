@@ -66,6 +66,7 @@ set runtimepath+=$HOME/.vim/bundle/asyncomplete-lsp.vim
 set runtimepath+=$HOME/.vim/bundle/vim-lsp
 set runtimepath+=$HOME/.vim/bundle/vim-lsp-java
 set runtimepath+=$HOME/.vim/bundle/vim-lsp-typescript
+set runtimepath+=$HOME/.vim/bundle/vim-lsp-bash
 
 set runtimepath+=$HOME/.vim/bundle/vim-jdb
 
