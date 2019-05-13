@@ -4,11 +4,11 @@
 
 # terminal emulator
 super + Return
-	urxvt
+	urxvt -e bash -c tmux
 
 # program launcher
 super + @space
-	rofi -show run
+	/home/lgranie/opt/fzf-urxvt
 
 # make sxhkd reload its configuration files:
 super + Escape

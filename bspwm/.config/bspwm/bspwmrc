@@ -15,6 +15,6 @@ bspc config merge_overlapping_monitors true
 bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a Transmission-gtk pseudo_tiled=on
 bspc rule -a feh floating=on manage=off
-
+bspc rule -a \*:"FzfURxvt" state=floating center=on sticky=on
 feh --randomize --bg-fill --no-fehbg $HOME/Pictures/wallpapers/* 
 

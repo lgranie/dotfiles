@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+NoDisplay=true
+Exec=add-to-transmission.sh %u
+Name=add-to-transmission
+Comment=Custom definition for transmission-daemon

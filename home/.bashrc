@@ -69,7 +69,7 @@ unset color_prompt force_color_prompt
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
 xterm*|rxvt*|urxvt*|sreen*)
-    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+    PS1="\[\e\]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
     ;;
 *)
     ;;
@@ -93,7 +93,7 @@ if [ -f /usr/share/doc/fzf/examples/key-bindings.bash ]; then
   . /usr/share/doc/fzf/examples/key-bindings.bash
 fi
 
-# Powerline
+# Powerline only in X
 if [ -f `which powerline-daemon` ]; then
   powerline-daemon -q
   POWERLINE_BASH_CONTINUATION=1
