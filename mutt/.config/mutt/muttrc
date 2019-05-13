@@ -22,8 +22,6 @@ set charset = "utf-8"
 set record = ''
 
 source /home/lgranie/.config/mutt/colors.muttrc
-#source "gpg -d ~/.config/mutt/passwords.gpg |"
+source "gpg -d ~/.config/mutt/passwords.gpg |"
 
-set imap_pass = "ehnskxmybchfsoee"
-set smtp_pass = "ehnskxmybchfsoee"
 
