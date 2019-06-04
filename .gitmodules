@@ -43,3 +43,6 @@
 [submodule "vim/.vim/bundle/vim-lsp-bash"]
 	path = vim/.vim/bundle/vim-lsp-bash
 	url = https://github.com/lgranie/vim-lsp-bash.git
+[submodule "base16"]
+	path = base16
+	url = https://github.com/lgranie/base16-builder-bash
