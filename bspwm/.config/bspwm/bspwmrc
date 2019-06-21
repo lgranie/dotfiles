@@ -2,7 +2,7 @@
 
 sxhkd &
 
-bspc monitor -d I II III IV
+bspc monitor -d Desktop
 
 bspc config border_width         2
 bspc config window_gap           6
@@ -13,8 +13,9 @@ bspc config gapless_monocle            true
 bspc config merge_overlapping_monitors true
 
 bspc rule -a Gimp desktop='^8' state=floating follow=on
-bspc rule -a Transmission-gtk pseudo_tiled=on
-bspc rule -a feh floating=on manage=off
 bspc rule -a \*:"FzfURxvt" state=floating center=on sticky=on
+
+# background
+bspc rule -a feh floating=on manage=off
 feh --randomize --bg-fill --no-fehbg $HOME/Pictures/wallpapers/* 
 
