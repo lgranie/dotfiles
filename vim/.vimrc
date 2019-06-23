@@ -54,8 +54,6 @@ set winminheight=5
 " plugin path
 set runtimepath+=$HOME/.vim/bundle/vim-tmux-navigator
 set runtimepath+=$HOME/.vim/bundle/vim-airline
-set runtimepath+=$HOME/.vim/bundle/vim-airline-themes
-set runtimepath+=$HOME/.vim/bundle/gruvbox
 
 set runtimepath+=/usr/share/doc/fzf/examples
 set runtimepath+=$HOME/.vim/bundle/fzf.vim
@@ -85,14 +83,16 @@ let g:vim_lsp_java = {
 \ }
 
 " color scheme
+let base16colorspace=256
 syntax enable
 set background=dark
-colorscheme gruvbox
+colorscheme base16-vim
 
 " font
 set guifont=DejaVu\ Sans\ Mono:h11
 
 " vim-airline
+set runtimepath+=$HOME/.vim/bundle/vim-airline-themes
 let g:airline_powerline_fonts = 1
 let g:airline_theme='gruvbox'
 
