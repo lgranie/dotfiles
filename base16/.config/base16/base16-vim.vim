@@ -1,1 +1,1 @@
-themes/gruvbox-dark-soft/base16-vim.vim
+themes/solarized-dark/base16-vim.vim

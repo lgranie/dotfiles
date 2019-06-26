@@ -95,7 +95,7 @@ set guifont=DejaVu\ Sans\ Mono:h11
 
 " vim-airline
 let g:airline_powerline_fonts=1
-let g:airline_theme='base16'
+let g:airline_theme='base16-vim-airline'
 
 " xml folding
 let g:xml_syntax_folding=1
