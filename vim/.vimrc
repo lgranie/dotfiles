@@ -85,7 +85,7 @@ let g:vim_lsp_java = {
 \ }
 
 " color scheme
-let base16colorspace=256
+" let base16colorspace=256
 syntax enable
 set background=dark
 colorscheme base16-vim
