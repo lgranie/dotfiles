@@ -85,7 +85,7 @@ let g:vim_lsp_java = {
 \ }
 
 " color scheme
-" let base16colorspace=256
+let base16colorspace=256
 syntax enable
 set background=dark
 colorscheme base16-vim
@@ -95,7 +95,7 @@ set guifont=DejaVu\ Sans\ Mono:h11
 
 " vim-airline
 let g:airline_powerline_fonts=1
-let g:airline_theme='base16-vim-airline'
+let g:airline_theme='base16'
 
 " xml folding
 let g:xml_syntax_folding=1
