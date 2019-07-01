@@ -1,12 +1,6 @@
 [submodule "vim/.vim/bundle/vim-tmux-navigator"]
 	path = vim/.vim/bundle/vim-tmux-navigator
 	url = https://github.com/christoomey/vim-tmux-navigator.git
-[submodule "vim/.vim/bundle/vim-airline"]
-	path = vim/.vim/bundle/vim-airline
-	url = https://github.com/vim-airline/vim-airline
-[submodule "vim/.vim/bundle/vim-airline-themes"]
-	path = vim/.vim/bundle/vim-airline-themes
-	url = http://github.com/vim-airline/vim-airline-themes.git
 [submodule "gruvbox/gruvbox-contrib"]
 	path = gruvbox/gruvbox-contrib
 	url = https://github.com/morhetz/gruvbox-contrib.git

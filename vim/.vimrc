@@ -54,9 +54,6 @@ set winminheight=5
 " plugin path
 set runtimepath+=$HOME/.vim/bundle/vim-tmux-navigator
 
-set runtimepath+=$HOME/.vim/bundle/vim-airline
-set runtimepath+=$HOME/.vim/bundle/vim-airline-themes
-
 set runtimepath+=/usr/share/doc/fzf/examples
 set runtimepath+=$HOME/.vim/bundle/fzf.vim
 
@@ -84,6 +81,8 @@ let g:vim_lsp_java = {
   \ },
 \ }
 
+set termencoding=utf-8
+
 " color scheme
 let base16colorspace=256
 syntax enable
@@ -93,9 +92,12 @@ colorscheme base16-vim
 " font
 set guifont=DejaVu\ Sans\ Mono:h11
 
-" vim-airline
-let g:airline_powerline_fonts=1
-let g:airline_theme='base16'
+" Powerline
+set laststatus=2 " Always show statusline
+set runtimepath+=/usr/lib/python3/dist-packages/powerline/bindings/vim/
+set runtimepath+=/usr/share/vim/addons/plugin/powerline.vim
+let g:powerline_pycmd = 'py3'
+set t_Co=256
 
 " xml folding
 let g:xml_syntax_folding=1
