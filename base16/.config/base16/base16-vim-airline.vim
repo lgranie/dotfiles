@@ -1,1 +1,0 @@
-themes/gruvbox-dark-soft/base16-vim-airline.vim
