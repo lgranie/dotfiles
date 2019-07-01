@@ -27,7 +27,6 @@ set autoindent
 
 set history=50
 set showcmd       " display incomplete command
-set laststatus=2  " Always display the status line
 set autowrite     " Automatically :write before running commands
 set autoread      " Reload files changed outside vim
 
@@ -81,8 +80,6 @@ let g:vim_lsp_java = {
   \ },
 \ }
 
-set termencoding=utf-8
-
 " color scheme
 let base16colorspace=256
 syntax enable
@@ -90,13 +87,15 @@ set background=dark
 colorscheme base16-vim
 
 " font
+set termencoding=utf-8
 set guifont=DejaVu\ Sans\ Mono:h11
 
-" Powerline
-set laststatus=2 " Always show statusline
-set runtimepath+=/usr/lib/python3/dist-packages/powerline/bindings/vim/
-set runtimepath+=/usr/share/vim/addons/plugin/powerline.vim
+" Powerline status bar
+set laststatus=2
 let g:powerline_pycmd = 'py3'
+python3 from powerline.vim import setup as powerline_setup
+python3 powerline_setup()
+python3 del powerline_setup
 set t_Co=256
 
 " xml folding
