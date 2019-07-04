@@ -1,1 +1,1 @@
-themes/gruvbox-dark-pale/base16-shell.sh
+themes/gruvbox-dark-soft/base16-shell.sh

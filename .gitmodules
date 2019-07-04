@@ -1,9 +1,6 @@
 [submodule "vim/.vim/bundle/vim-tmux-navigator"]
 	path = vim/.vim/bundle/vim-tmux-navigator
 	url = https://github.com/christoomey/vim-tmux-navigator.git
-[submodule "gruvbox/gruvbox-contrib"]
-	path = gruvbox/gruvbox-contrib
-	url = https://github.com/morhetz/gruvbox-contrib.git
 [submodule "vim/.vim/bundle/async.vim"]
 	path = vim/.vim/bundle/async.vim
 	url = https://github.com/prabirshrestha/async.vim.git
@@ -22,9 +19,6 @@
 [submodule "vim/.vim/bundle/vim-jdb"]
 	path = vim/.vim/bundle/vim-jdb
 	url = https://gitlab.com/Dica-Developer/vim-jdb.git
-[submodule "gruvbox/tmux-gruvbox"]
-	path = gruvbox/tmux-gruvbox
-	url = https://github.com/egel/tmux-gruvbox.git
 [submodule "vim/.vim/bundle/vim-lsp-typescript"]
 	path = vim/.vim/bundle/vim-lsp-typescript
 	url = https://github.com/ryanolsonx/vim-lsp-typescript.git
