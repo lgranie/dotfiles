@@ -1,5 +1,5 @@
 shell: https://github.com/chriskempson/base16-shell.git
-tmux: https://github.com/mattdavis90/base16-tmux.git
 xresources: https://github.com/chriskempson/base16-xresources.git
+tmux: https://github.com/lgranie/base16-tmux.git
 vim: https://github.com/chriskempson/base16-vim.git
 
