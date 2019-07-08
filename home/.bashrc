@@ -39,7 +39,7 @@ if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
 fi
 
 # base16 color theme
-. ~/.config/base16/base16-shell.sh
+. ~/.config/local/base16.sh
 
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in

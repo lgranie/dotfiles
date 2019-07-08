@@ -84,7 +84,7 @@ let g:vim_lsp_java = {
 let base16colorspace=256
 syntax enable
 set background=dark
-colorscheme base16-vim
+colorscheme base16
 
 " font
 set termencoding=utf-8
