@@ -11,6 +11,10 @@
 				"select": "select"
 			}
 		},
+    "tmux": {
+      "colorscheme": "base16",
+      "theme": "default"
+    },
 		"vim": {
 			"colorscheme": "base16",
 			"theme": "default",
