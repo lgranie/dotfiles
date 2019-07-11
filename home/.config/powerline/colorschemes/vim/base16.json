@@ -1,5 +1,5 @@
 {
-	"name": "Base16",
+	"name": "base16",
 	"groups": {
 		"information:additional":   { "fg": "base16:base06", "bg": "base16:base01", "attrs": [] },
 		"information:unimportant":  { "fg": "base16:base07", "bg": "base16:base01", "attrs": [] },

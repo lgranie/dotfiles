@@ -1,8 +1,8 @@
 {
-	"name": "Base16",
+	"name": "base16",
 	"groups": {
-		"information:additional":     { "fg": "base16:base06", "bg": "base16:base0C", "attrs": [] },
-		"information:regular":        { "fg": "base16:base07", "bg": "base16:base0C", "attrs": ["bold"] },
+		"information:additional":     { "fg": "base16:base06", "bg": "base16:base01", "attrs": [] },
+		"information:regular":        { "fg": "base16:base07", "bg": "base16:base02", "attrs": ["bold"] },
 		"information:highlighted":    { "fg": "base16:base07", "bg": "base16:base01", "attrs": ["bold"] },
 		"information:priority":       { "fg": "base16:base07", "bg": "base16:base0A", "attrs": [] },
 		"warning:regular":            { "fg": "base16:base07", "bg": "base16:base08", "attrs": [] },
@@ -20,7 +20,7 @@
 		"email_alert":                "warning:regular",
 		"cwd":                        "information:additional",
 		"cwd:current_folder":         "information:regular",
-		"cwd:divider":                { "fg": "base16:base05", "bg": "base16:base0C", "attrs": [] },
+		"cwd:divider":                { "fg": "base16:base05", "bg": "base16:base01", "attrs": [] },
 		"network_load":               { "fg": "base16:base05", "bg": "base16:base03", "attrs": [] },
 		"network_load:divider":       "network_load",
 		"network_load_gradient":      { "fg": "green_yellow_orange_red", "bg": "base16:base03", "attrs": [] },
