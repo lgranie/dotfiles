@@ -112,6 +112,6 @@ if [ -f ~/.config/local/bashrc ]; then
 fi
 
 if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+  . ~/.bash_aliases
 fi
 
