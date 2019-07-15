@@ -38,9 +38,6 @@ if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
 fi
 
-# base16 color theme
-. ~/.config/local/base16.sh
-
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
     xterm-color|*-256color) color_prompt=yes;;
@@ -95,6 +92,9 @@ fi
 if [ -f /usr/share/doc/fzf/examples/key-bindings.bash ]; then
   . /usr/share/doc/fzf/examples/key-bindings.bash
 fi
+
+# base16 color theme
+. ~/.config/local/base16.sh
 
 # Powerline only in X
 if [ -f `which powerline-daemon` ]; then
