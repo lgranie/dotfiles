@@ -18,6 +18,8 @@ alias mv='mv -i'
 alias le='less'
 alias du='du -h -d 1'
 
+alias unzip='7z e'
+
 function d2u () {
   sed -i 's/\r//' $1
 }
