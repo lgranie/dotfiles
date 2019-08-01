@@ -70,16 +70,17 @@ alias gusmom='git submodule foreach git pull origin master'
 # Git log find by commit message
 function glf() { git log --all --grep="$1"; }
 
-function mcist () {
-  mvn -T 4 clean install -DskipTests
-}
+#-----------------------
+# Apache Maven
+#-----------------------
+alias mvnd='mvn -offline -T 1C install -DskipTests'
 
 function mci () {
-  mvn -T 4 clean install
+  mvn -T 1C clean install
 }
 
 function msbd () {
-  mvn spring-boot:run -Dspring-boot.run.jvmArguments="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005"
+  mvn -T 1C spring-boot:run -Dspring-boot.run.jvmArguments="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005" -XX:+TieredCompilation -XX:TieredStopAtLevel=1
 }
 
 function start_dev () {
