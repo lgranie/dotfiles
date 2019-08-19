@@ -74,9 +74,9 @@ set runtimepath+=$HOME/.vim/bundle/vim-jdb
 let g:vim_lsp_java = {
   \ 'eclipse_jdtls' : {
     \ 'repository': expand('~/opt/eclipse.jdt.ls/org.eclipse.jdt.ls.product/target/repository'),
-    \ 'version': '1.5.300.v20190213-1655',
+    \ 'version': '1.5.500.v20190715-1310',
     \ 'config': 'config_linux',
-    \ 'workspace': '/mnt/c/workspace-poc',
+    \ 'workspace': '/mnt/c/workspace/SWF/v2/apps/bniapi',
   \ },
 \ }
 

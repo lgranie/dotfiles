@@ -19,7 +19,7 @@ alias le='less'
 alias du='du -h -d 1'
 alias df='df -h'
 
-alias unzip='7z e'
+alias unzip='7z x'
 
 function d2u () {
   sed -i 's/\r//' $1
