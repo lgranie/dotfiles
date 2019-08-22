@@ -62,13 +62,18 @@ set runtimepath+=$HOME/.vim/bundle/asyncomplete-lsp.vim
 set runtimepath+=$HOME/.vim/bundle/vim-lsp
 set runtimepath+=$HOME/.vim/bundle/vim-lsp-java
 set runtimepath+=$HOME/.vim/bundle/vim-lsp-typescript
+set runtimepath+=$HOME/.vim/bundle/vim-lsp-javascript
 set runtimepath+=$HOME/.vim/bundle/vim-lsp-bash
 
 set runtimepath+=$HOME/.vim/bundle/vim-jdb
 
 " debugging vim-lsp
-"let g:lsp_log_verbose = 1
-"let g:lsp_log_file = expand('~/vim-lsp.log')
+let g:lsp_log_verbose = 1
+let g:lsp_log_file = expand('~/vim-lsp.log')
+
+let g:lsp_diagnostics_enabled = 1     " enable diagnostics support
+let g:lsp_signs_enabled = 1           " enable signs
+let g:lsp_diagnostics_echo_cursor = 1 " enable echo under cursor when in normal mode
 
 " vim-lsp-java
 let g:vim_lsp_java = {

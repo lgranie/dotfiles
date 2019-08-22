@@ -28,3 +28,6 @@
 [submodule "vim/.vim/bundle/vim-lsp-bash"]
 	path = vim/.vim/bundle/vim-lsp-bash
 	url = https://github.com/lgranie/vim-lsp-bash.git
+[submodule "vim/.vim/bundle/vim-lsp-javascript"]
+	path = vim/.vim/bundle/vim-lsp-javascript
+	url = https://github.com/ryanolsonx/vim-lsp-javascript.git
