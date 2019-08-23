@@ -17,6 +17,7 @@ alias rm='rm -i'
 alias mv='mv -i'
 alias le='less'
 alias du='du -h -d 1'
+alias df='df -h'
 
 alias unzip='7z x'
 
