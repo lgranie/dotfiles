@@ -15,5 +15,5 @@
 [mergetool]
   prompt = false
 [core]
-	fileMode = false
+  fileMode = false
   autocrlf = input
