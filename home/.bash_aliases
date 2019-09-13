@@ -25,13 +25,13 @@ function d2u () {
   sed -i 's/\r//' $1
 }
 
-
-alias gusmom='git submodule foreach git pull origin master'
+alias transmission='transmission-daemon && tconnect'
 
 # ----------------------
-# Git Functions
+# Git Functions & Aliases
 # ----------------------
 # Git log find by commit message
+alias gusmom='git submodule foreach git pull origin master'
 function glf() { git log --all --grep="$1"; }
 
 #-----------------------
