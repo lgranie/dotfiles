@@ -81,7 +81,7 @@ let g:vim_lsp_java = {
     \ 'repository': expand('~/opt/eclipse.jdt.ls/org.eclipse.jdt.ls.product/target/repository'),
     \ 'version': '1.5.500.v20190715-1310',
     \ 'config': 'config_linux',
-    \ 'workspace': '/mnt/c/workspace/SWF/v2/apps/bniapi',
+    \ 'workspace': expand('$WORKSPACE'),
   \ },
 \ }
 
