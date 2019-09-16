@@ -111,6 +111,14 @@ python3 powerline_setup()
 python3 del powerline_setup
 set t_Co=256
 
+" vimdiff
+if &diff
+  set cursorline
+  map ] ]c
+  map [ [c
+  set diffopt+=iwhite
+endif
+
 " xml folding
 let g:xml_syntax_folding=1
 au FileType xml,xslt setlocal foldmethod=syntax
