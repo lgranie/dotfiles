@@ -113,7 +113,7 @@ set t_Co=256
 
 " vimdiff
 if &diff
-  set cursorline
+  set nofoldenable
   map ] ]c
   map [ [c
   set diffopt+=iwhite
