@@ -4,16 +4,19 @@
 [status]
   submoduleSummary = true
 [diff]
+  tool = vimdiff
   submodule = log
-[fetch]
-  recurseSubmodules = on-demand
-[include]
-  path = ~/.config/local/gitconfig
+[difftool]
+	prompt = false
 [merge]
   tool = vimdiff
   conflictstyle = diff3
 [mergetool]
   prompt = false
+[fetch]
+  recurseSubmodules = on-demand
+[include]
+  path = ~/.config/local/gitconfig
 [core]
   fileMode = false
   autocrlf = input
