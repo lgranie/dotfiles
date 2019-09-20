@@ -35,7 +35,7 @@ set visualbell    " stop that ANNOYING beeping
 set wildmenu
 set wildmode=list:longest,full
 
-" Split
+" Navigate split window
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
@@ -45,10 +45,10 @@ set splitbelow
 set splitright
 
 " Auto resize Vim splits to active split
-set winwidth=130
-set winheight=999
-set winminwidth=80
-set winminheight=5
+"set winwidth=130
+"set winheight=999
+"set winminwidth=80
+"set winminheight=5
 
 " plugin path
 set runtimepath+=$HOME/.vim/bundle/vim-tmux-navigator
@@ -72,16 +72,15 @@ let g:lsp_log_verbose = 1
 let g:lsp_log_file = expand('~/vim-lsp.log')
 
 let g:lsp_diagnostics_enabled = 1     " enable diagnostics support
+let g:lsp_diagnostics_echo_cursor = 1 " enable echo under cursor when in normal mode
 
 " let g:lsp_signs_enabled = 1           " enable signs
 let g:lsp_signs_enabled = get(g:, 'lsp_signs_enabled', has('patch-8.1.0772') && exists('*sign_define'))
-let g:lsp_diagnostics_echo_cursor = 1 " enable echo under cursor when in normal mode
 let g:lsp_signs_error = {'text': '✗'}
 let g:lsp_signs_warning = {'text': '‼'}
 let g:lsp_signs_hint = {'text': 'o'}
 
 let g:lsp_textprop_enabled = 1
-let g:lsp_diagnostics_echo_cursor = 1 " enable echo under cursor when in normal mode
 
 " vim-lsp-java
 let g:vim_lsp_java = {
@@ -117,6 +116,7 @@ if &diff
   map ] ]c
   map [ [c
   set diffopt+=iwhite
+  set diffexpr=""
 endif
 
 " xml folding
