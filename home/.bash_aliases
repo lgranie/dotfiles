@@ -30,9 +30,13 @@ alias transmission='transmission-daemon && tconnect'
 # ----------------------
 # Git Functions & Aliases
 # ----------------------
-# Git log find by commit message
+source ~/.config/git/fzf-aliases
+
+# forgit
+# https://github.com/wfxr/forgit
+source ~/.config/forgit/forgit.plugin.sh
+
 alias gusmom='git submodule foreach git pull origin master'
-function glf() { git log --all --grep="$1"; }
 
 #-----------------------
 # Apache Maven
