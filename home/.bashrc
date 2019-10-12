@@ -109,10 +109,6 @@ if [ -f `which powerline-daemon` ]; then
   . /usr/share/powerline/bindings/bash/powerline.sh
 fi
 
-# forgit
-# https://github.com/wfxr/forgit
-source ~/.config/forgit/forgit.plugin.sh
-
 # xmllint
 XMLLINT_INDENT=  
 
