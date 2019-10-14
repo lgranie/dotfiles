@@ -31,3 +31,6 @@
 [submodule "git/opt/forgit"]
 	path = home/.config/forgit
 	url = https://github.com/wfxr/forgit.git
+[submodule "vim/.vim/bundle/vim-lsp"]
+	path = vim/.vim/bundle/vim-lsp
+	url = https://github.com/prabirshrestha/vim-lsp
