@@ -7,10 +7,12 @@
   tool = vimdiff
   submodule = log
 [difftool]
-	prompt = false
+  prompt = false
 [merge]
   tool = vimdiff
   conflictstyle = diff3
+  ff = no
+  commit = no
 [mergetool]
   prompt = false
   keepBackup = false
