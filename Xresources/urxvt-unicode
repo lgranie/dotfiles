@@ -5,4 +5,5 @@ URxvt.inheritPixmap: true
 URxvt.transparent: false
 URxvt.shading: 20
 URxvt.font: xft:DejaVu\ Sans\ Mono\ for\ Powerline:pixelsize=12:antialias=true
+URxvt*cursorColor: color10
 !URxvt.letterSpace: -1
