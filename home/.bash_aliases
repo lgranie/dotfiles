@@ -61,8 +61,8 @@ function start_dev () {
 function udist () {
   sudo apt-get update;
   sudo apt-get -u dist-upgrade;
-  sudo apt-get -u upgrade;
-  sudo apt-get --purge autoremove;
+  sudo apt-get -u --assume-yes upgrade;
+  sudo apt-get --purge --assume-yes autoremove;
   sudo apt-get clean;
   deborphan;
 }
