@@ -14,6 +14,8 @@ bspc config merge_overlapping_monitors true
 
 bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a \*:"FzfURxvt" state=floating center=on sticky=on
+bspc rule -a Firefox state=floating
+bspc rule -a Firefox:Navigator state=tiled
 
 # background
 bspc rule -a feh floating=on manage=off
