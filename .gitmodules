@@ -29,7 +29,7 @@
 	path = vim/.vim/bundle/vim-lsp-javascript
 	url = https://github.com/ryanolsonx/vim-lsp-javascript.git
 [submodule "git/opt/forgit"]
-	path = home/.config/forgit
+	path = git/.config/forgit
 	url = https://github.com/wfxr/forgit.git
 [submodule "vim/.vim/bundle/vim-lsp"]
 	path = vim/.vim/bundle/vim-lsp
