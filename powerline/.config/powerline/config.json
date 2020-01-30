@@ -1,10 +1,10 @@
 {
 	"common": {
-		"term_truecolor": false
+		"term_truecolor": false,
+		"colorscheme": "base16"
 	},
 	"ext": {
 		"shell": {
-			"colorscheme": "base16",
 			"theme": "default_leftonly_lge",
 			"local_themes": {
 				"continuation": "continuation",
@@ -12,11 +12,9 @@
 			}
 		},
     "tmux": {
-      "colorscheme": "base16",
       "theme": "default"
     },
 		"vim": {
-			"colorscheme": "base16",
 			"theme": "default",
 			"local_themes": {
 				"__tabline__": "tabline",
