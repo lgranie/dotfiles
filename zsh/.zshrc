@@ -1,6 +1,9 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# load .profile (env)
+[[ -e ~/.profile ]] && emulate sh -c 'source ~/.profile'
+
 # Enable colors and change prompt:
 autoload -U colors && colors
 eval "$(dircolors -b)"
@@ -10,11 +13,10 @@ if [ -f ~/.config/local/base16.sh ]; then
   source ~/.config/local/base16.sh
 fi
 
-# Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
+# Keep 1000 lines of history within the shell 
 setopt histignorealldups sharehistory
 HISTSIZE=1000
 SAVEHIST=1000
-HISTFILE=~/.zsh_history
 
 # Basic auto/tab complete:
 autoload -U compinit
