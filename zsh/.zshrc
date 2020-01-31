@@ -7,7 +7,7 @@ prompt adam1
 setopt histignorealldups sharehistory
 
 # Use emacs keybindings even if our EDITOR is set to vi
-bindkey -e
+bindkey -v
 
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
 HISTSIZE=1000
@@ -41,3 +41,24 @@ if [ -f ~/.config/local/base16.sh ]; then
   source ~/.config/local/base16.sh
 fi
 
+fpath=($fpath "/home/lgranie/.zfunctions")
+
+# Set Spaceship ZSH as a prompt
+SPACESHIP_PROMPT_ORDER=(
+  vi_mode
+  user
+  dir
+  host
+  git
+)
+SPACESHIP_PROMPT_ADD_NEWLINE=true
+SPACESHIP_VI_MODE_SHOW=true
+SPACESHIP_PROMPT_SEPARATE_LINE=false
+autoload -U promptinit; promptinit
+prompt spaceship
+spaceship_vi_mode_enable
+
+# use fzf bindings
+if [ -f /usr/share/doc/fzf/examples/key-bindings.zsh ]; then
+  . /usr/share/doc/fzf/examples/key-bindings.zsh
+fi 
