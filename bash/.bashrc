@@ -2,6 +2,10 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+if [ -f ~/.profile ]; then
+  . ~/.profile
+fi
+
 # mode vi
 set -o vi
 
@@ -95,8 +99,6 @@ fi
 if [ -f /usr/share/doc/fzf/examples/key-bindings.bash ]; then
   . /usr/share/doc/fzf/examples/key-bindings.bash
 fi
-
-export FZF_DEFAULT_OPTS='--layout=reverse --border'
 
 # base16 color theme
 . ~/.config/local/base16.sh
