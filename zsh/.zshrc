@@ -4,14 +4,14 @@
 # load .profile (env)
 [[ -e ~/.profile ]] && emulate sh -c 'source ~/.profile'
 
-# Enable colors and change prompt:
-autoload -U colors && colors
-eval "$(dircolors -b)"
-
 # base16
 if [ -f ~/.config/local/base16.sh ]; then
   source ~/.config/local/base16.sh
 fi
+
+# Enable colors and change prompt:
+autoload -U colors && colors
+eval "$(dircolors -b)"
 
 # Keep 1000 lines of history within the shell 
 setopt histignorealldups sharehistory
@@ -23,6 +23,7 @@ autoload -U compinit
 zstyle ':completion:*' menu select
 # Auto complete with case insenstivity
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 zmodload zsh/complist
 compinit
 _comp_options+=(globdots)   # Include hidden files.
@@ -40,6 +41,7 @@ bindkey -M menuselect 'left' vi-backward-char
 bindkey -M menuselect 'down' vi-down-line-or-history
 bindkey -M menuselect 'up' vi-up-line-or-history
 bindkey -M menuselect 'right' vi-forward-char
+
 # Fix backspace bug when switching modes
 bindkey "^?" backward-delete-char
 
@@ -97,3 +99,5 @@ if [ -f ~/.aliases ]; then
   source ~/.aliases
 fi
 
+# fix LS_COLORS
+LS_COLORS=${LS_COLORS}'ow=1;34:tw=1;34:'
