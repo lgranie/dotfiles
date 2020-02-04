@@ -86,7 +86,7 @@ let g:lsp_textprop_enabled = 1
 let g:vim_lsp_java = {
   \ 'eclipse_jdtls' : {
     \ 'repository': expand('~/opt/eclipse.jdt.ls/org.eclipse.jdt.ls.product/target/repository'),
-    \ 'version': '1.5.600.v20191014-2022',
+    \ 'version': '1.5.700.v20200107-1357',
     \ 'config': 'config_linux',
     \ 'workspace': expand('$WORKSPACE'),
   \ },
