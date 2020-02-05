@@ -12,6 +12,8 @@ fi
 # Enable colors and change prompt:
 autoload -Uz colors && colors
 eval "$(dircolors -b)"
+# fix LS_COLORS
+LS_COLORS=${LS_COLORS}'ow=1;34:tw=1;34:'
 
 # Keep 1000 lines of history within the shell 
 setopt histignorealldups sharehistory
@@ -99,5 +101,3 @@ if [ -f ~/.aliases ]; then
   source ~/.aliases
 fi
 
-# fix LS_COLORS
-LS_COLORS=${LS_COLORS}'ow=1;34:tw=1;34:'
