@@ -35,7 +35,7 @@ source ~/.config/git/fzf-aliases
 # https://github.com/wfxr/forgit
 source ~/.config/forgit/forgit.plugin.sh
 
-alias gusmom='git submodule foreach git pull origin master'
+alias gusmom='git submodule foreach git pull --rebase origin master'
 
 #-----------------------
 # Apache Maven
