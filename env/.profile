@@ -10,3 +10,7 @@ export PATH="$NPM_PACKAGES/bin:$PATH"
 # history
 export HISTFILE=~/.history
 
+if [ -f ~/.config/local/envrc ]; then
+  . ~/.config/local/envrc
+fi
+
