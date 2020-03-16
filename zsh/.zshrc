@@ -77,15 +77,17 @@ fpath=($fpath "/home/lgranie/.zfunctions")
 
 # Set up the prompt
 # Set Spaceship ZSH as a prompt
-SPACESHIP_PROMPT_ADD_NEWLINE=false
-SPACESHIP_PROMPT_SEPARATE_LINE=true
-SPACESHIP_CHAR_SYMBOL=❯
-SPACESHIP_CHAR_SUFFIX=" "
-SPACESHIP_VI_MODE_SHOW=false
-autoload -Uz promptinit
-promptinit
-prompt spaceship
-spaceship_vi_mode_enable
+#SPACESHIP_PROMPT_ADD_NEWLINE=false
+#SPACESHIP_PROMPT_SEPARATE_LINE=true
+#SPACESHIP_CHAR_SYMBOL=❯
+#SPACESHIP_CHAR_SUFFIX=" "
+#SPACESHIP_VI_MODE_SHOW=false
+#autoload -Uz promptinit
+#promptinit
+#prompt spaceship
+#spaceship_vi_mode_enable
+
+PROMPT='%(?.%F{green}√.%F{red}?%?)%f %B%F{240}%1~%f%b %❯ '
 
 # use fzf bindings
 if [ -f /usr/share/doc/fzf/examples/key-bindings.zsh ]; then
