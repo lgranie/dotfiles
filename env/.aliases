@@ -28,6 +28,7 @@ alias transmission='transmission-daemon && tconnect'
 
 alias ssm='ssh maxbian; reset'
 
+alias castlive='cvlc -vvv alsa://hw:0,0 --sout="#transcode{vcodec=none,acodec=mp3,ab=320,channels=2,samplerate=44100}:http{mux=mp3,dst=:8081}" --sout-keep'
 # ----------------------
 # Git Functions & Aliases
 # ----------------------
