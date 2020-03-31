@@ -26,6 +26,8 @@ function d2u () {
 
 alias transmission='transmission-daemon && tconnect'
 
+alias ssm='ssh maxbian; reset'
+
 # ----------------------
 # Git Functions & Aliases
 # ----------------------
