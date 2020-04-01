@@ -9,7 +9,7 @@ if [ -f ~/.config/local/base16.sh ]; then
   source ~/.config/local/base16.sh
 fi
 
-# Enable colors and change prompt:
+# Enable colors 
 autoload -Uz colors && colors
 eval "$(dircolors -b)"
 # fix LS_COLORS
@@ -87,7 +87,7 @@ fpath=($fpath "/home/lgranie/.zfunctions")
 #prompt spaceship
 #spaceship_vi_mode_enable
 
-PROMPT='%(?.%F{3}√.%F{1}?%?)%f %B%F{240}%1~%f%b %F{2}❯%f '
+PROMPT='%(?.%F{3}√.%F{1}?%?)%f %F{4}%m%f %B%F{240}%1~%f%b %F{2}❯%f '
 
 # use fzf bindings
 if [ -f /usr/share/doc/fzf/examples/key-bindings.zsh ]; then
