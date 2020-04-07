@@ -13,7 +13,7 @@
             "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
             "hidden": false,
             "name": "Debian",
-            "fontFace" : "DejaVuSansMono NF",
+            "fontFace" : "DejaVu Sans Mono for Powerline",
             "fontSize" : 9,
 //          "useAcrylic": true,
 //          "acrylicOpacity": 0.75,
