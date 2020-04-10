@@ -1,7 +1,5 @@
-if [ -f ~/.bashrc ]; then
-    . ~/.bashrc
-fi
+[ -f ~/.profile ] && source ~/.profile
 
-if [ -f ~/.config/local/bash_profile ]; then
-  . ~/.config/local/bash_profile
-fi
+[ -f ~/.config/local/bash_profile ] && source ~/.config/local/bash_profile
+
+[ -f ~/.bashrc ] && source ~/.bashrc
