@@ -32,6 +32,9 @@ shopt -s globstar
 # enable color support of ls and also add handy aliases
 [ -x /usr/bin/dircolors ] && test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
 
+#  Fix dir colors
+export LS_COLORS="$LS_COLORS:ow=1;34:tw=1;34:"
+
 # use fzf for completions
 [ -f /usr/share/doc/fzf/examples/completion.bash ] && source /usr/share/doc/fzf/examples/completion.bash
 
