@@ -1,5 +1,3 @@
-alias xrdb='xrdb -I$HOME'
-
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
   alias ll='ls -l --color=auto'
@@ -24,19 +22,15 @@ function d2u () {
   sed -i 's/\r//' $1
 }
 
-alias transmission='transmission-daemon && tconnect'
 
-alias ssm='ssh maxbian; reset'
-
-alias castlive='cvlc -vvv alsa://hw:0,0 --sout="#transcode{vcodec=none,acodec=mp3,ab=320,channels=2,samplerate=44100}:http{mux=mp3,dst=:8081}" --sout-keep'
 # ----------------------
 # Git Functions & Aliases
 # ----------------------
-source ~/.config/git/fzf-aliases
+source ${XDG_CONFIG_HOME}/git/fzf-aliases
 
 # forgit
 # https://github.com/wfxr/forgit
-source ~/.config/forgit/forgit.plugin.sh
+source ${XDG_CONFIG_HOME}/forgit/forgit.plugin.sh
 
 alias gusmom='git submodule foreach git pull --rebase origin master'
 
@@ -62,15 +56,12 @@ function start_dev () {
 }
 
 function udist () {
-  sudo apt-get update;
-  sudo apt-get -u dist-upgrade;
-  sudo apt-get -u --assume-yes upgrade;
-  sudo apt-get --purge --assume-yes autoremove;
-  sudo apt-get clean;
+  sudo apt-get update &&
+  sudo apt-get -u upgrade &&
+  sudo apt-get --purge --assume-yes autoremove &&
+  sudo apt-get clean &&
   deborphan;
 }
 
-if [ -f ~/.config/local/bash_aliases ]; then
-. ~/.config/local/bash_aliases
-fi
+[ -f ${XDG_CONFIG_HOME}/local/aliases ] && . ${XDG_CONFIG_HOME}/local/aliases
 
