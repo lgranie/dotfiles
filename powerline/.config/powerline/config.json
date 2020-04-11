@@ -5,7 +5,7 @@
 	},
 	"ext": {
 		"shell": {
-			"theme": "default_leftonly",
+			"theme": "default_leftonly_lge",
 			"local_themes": {
 				"continuation": "continuation",
 				"select": "select"
@@ -21,12 +21,7 @@
 
 				"cmdwin": "cmdwin",
 				"help": "help",
-				"quickfix": "quickfix",
-
-				"powerline.matchers.vim.plugin.nerdtree.nerdtree": "plugin_nerdtree",
-				"powerline.matchers.vim.plugin.commandt.commandt": "plugin_commandt",
-				"powerline.matchers.vim.plugin.gundo.gundo": "plugin_gundo",
-				"powerline.matchers.vim.plugin.gundo.gundo_preview": "plugin_gundo-preview"
+				"quickfix": "quickfix"
 			}
 		}
 	}
