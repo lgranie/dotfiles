@@ -1,22 +1,22 @@
-! Base16 Gruvbox darker
-! Scheme: Laurent Granié, Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
+! Base16 Horizon Dark
+! Scheme: Michaël Ball (http://github.com/michael-ball/)
 
-#define base00 #1d2021
-#define base01 #3c3836
-#define base02 #504945
-#define base03 #665c54
-#define base04 #bdae93
-#define base05 #d5c4a1
-#define base06 #ebdbb2
-#define base07 #fbf1c7
-#define base08 #cc241d
-#define base09 #d65d0e
-#define base0A #d79921
-#define base0B #98971a
-#define base0C #689d6a
-#define base0D #458588
-#define base0E #b16286
-#define base0F #d65d0e
+#define base00 #1C1E26
+#define base01 #232530
+#define base02 #2E303E
+#define base03 #6F6F70
+#define base04 #9DA0A2
+#define base05 #CBCED0
+#define base06 #DCDFE4
+#define base07 #E3E6EE
+#define base08 #E93C58
+#define base09 #E58D7D
+#define base0A #EFB993
+#define base0B #EFAF8E
+#define base0C #24A8B4
+#define base0D #DF5273
+#define base0E #B072D1
+#define base0F #E4A382
 
 *foreground:   base05
 #ifdef background_opacity
