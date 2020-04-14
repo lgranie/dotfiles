@@ -87,7 +87,7 @@ fpath=($fpath "/home/lgranie/.zfunctions")
 #prompt spaceship
 #spaceship_vi_mode_enable
 
-PROMPT='%(?.%F{3}√.%F{1}?%?)%f %F{4}%m%f %B%F{240}%1~%f%b %F{2}❯%f '
+PROMPT='%(?.%F{3}√.%F{1}?%?)%f %F{6}%m%f %B%F{4}%1~%f%b %F{2}❯%f '
 
 # use fzf bindings
 if [ -f /usr/share/doc/fzf/examples/key-bindings.zsh ]; then
