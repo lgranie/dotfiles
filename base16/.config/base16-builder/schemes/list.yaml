@@ -4,4 +4,6 @@ gruvbox: https://github.com/dawikur/base16-gruvbox-scheme.git
 gruvbox-lge: https://github.com/lgranie/base16-gruvbox-lge-scheme.git
 nord: https://github.com/ada-lovecraft/base16-nord-scheme
 dracula: https://github.com/dracula/base16-dracula-scheme
+onedark: https://github.com/tilal6991/base16-onedark-scheme
+horizon: https://github.com/michael-ball/base16-horizon-scheme
 
