@@ -6,6 +6,8 @@
 [[ -z ${XDG_CACHE_HOME:-} ]] && export XDG_CACHE_HOME="$HOME/.cache"
 [[ -z ${XDG_DATA_HOME:-} ]] && export XDG_DATA_HOME="$HOME/.local/share"
 
+export PATH="$HOME/.local/bin:$PATH"
+
 # fzf default options
 export FZF_DEFAULT_OPTS="--layout=reverse --border"
 
