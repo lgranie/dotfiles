@@ -2,6 +2,8 @@
 
 sxhkd &
 
+setxkbmap fr
+
 bspc monitor -d Desktop
 
 bspc config border_width         2

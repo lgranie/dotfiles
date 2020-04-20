@@ -1,1 +1,1 @@
-prefix=${XDG_CONFIG_DIR}/npm/global
+prefix=/home/lgranie/.config/npm/global
