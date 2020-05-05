@@ -44,8 +44,8 @@ export LS_COLORS="$LS_COLORS:ow=1;34:tw=1;34:"
 # bash completion
 [ -f /usr/share/bash-completion/bash_completion ] && source /usr/share/bash-completion/bash_completion
 
-# base16 color theme
-[ -f ${XDG_CONFIG_HOME}/local/base16.sh ] && source ${XDG_CONFIG_HOME}/local/base16.sh
+# base24 color theme
+[ -f ${XDG_CONFIG_HOME}/local/base24.sh ] && source ${XDG_CONFIG_HOME}/local/base24.sh 
 
 # Powerline only in X
 if [ -f `which powerline-daemon` ]; then
