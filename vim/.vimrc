@@ -56,6 +56,10 @@ set runtimepath+=$HOME/.vim/bundle/vim-tmux-navigator
 set runtimepath+=/usr/share/doc/fzf/examples
 set runtimepath+=$HOME/.vim/bundle/fzf.vim
 
+set runtimepath+=$HOME/.vim/bundle/colorizer.vim
+
+set runtimepath+=$HOME/.vim/bundle/vimwiki
+
 set runtimepath+=$HOME/.vim/bundle/async.vim
 set runtimepath+=$HOME/.vim/bundle/asyncomplete.vim
 set runtimepath+=$HOME/.vim/bundle/asyncomplete-lsp.vim
@@ -66,6 +70,11 @@ set runtimepath+=$HOME/.vim/bundle/vim-lsp-javascript
 set runtimepath+=$HOME/.vim/bundle/vim-lsp-bash
 
 set runtimepath+=$HOME/.vim/bundle/vim-jdb
+
+" vimwiki syntax markdown
+let g:vimwiki_list = [{'path': '~/vimwiki/',
+                      \ 'syntax': 'markdown', 'ext': '.md'}]
+filetype plugin on
 
 " debugging vim-lsp
 let g:lsp_log_verbose = 1
@@ -93,7 +102,7 @@ let g:vim_lsp_java = {
 
 " color scheme
 let base16colorspace=256
-syntax enable
+syntax on
 set background=dark
 colorscheme base16
 

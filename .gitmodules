@@ -34,3 +34,9 @@
 [submodule "vim/.vim/bundle/vim-lsp"]
 	path = vim/.vim/bundle/vim-lsp
 	url = https://github.com/prabirshrestha/vim-lsp
+[submodule "vim/.vim/bundle/colorizer.vim"]
+	path = vim/.vim/bundle/colorizer.vim
+	url = https://github.com/chrisbra/Colorizer.git
+[submodule "vim/.vim/bundle/vimwiki"]
+	path = vim/.vim/bundle/vimwiki
+	url = https://github.com/vimwiki/vimwiki.git
