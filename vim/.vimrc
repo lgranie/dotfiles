@@ -100,11 +100,20 @@ let g:vim_lsp_java = {
   \ },
 \ }
 
+" define terminal colors
+if (has("termguicolors"))
+  set termguicolors
+  " This is only necessary if you use "set termguicolors".
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+endif
+
 " color scheme
 let base16colorspace=256
 syntax on
 set background=dark
 colorscheme base16
+set t_Co=256
 
 " font
 set termencoding=utf-8
@@ -116,7 +125,6 @@ let g:powerline_pycmd = 'py3'
 python3 from powerline.vim import setup as powerline_setup
 python3 powerline_setup()
 python3 del powerline_setup
-set t_Co=256
 
 " vimdiff
 if &diff
