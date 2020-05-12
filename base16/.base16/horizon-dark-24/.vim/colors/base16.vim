@@ -2,7 +2,7 @@
 
 " base16-vim (https://github.com/chriskempson/base16-vim)
 " by Chris Kempson (http://chriskempson.com)
-" Horizon Dark scheme by Michaël Ball (http://github.com/michael-ball/)
+" Horizon Dark 24 scheme by Laurent Granié based on (https://horizontheme.netlify.app/)
 
 " This enables the coresponding base16-shell script to run so that
 " :colorscheme works in terminals supported by base16-shell scripts
@@ -15,38 +15,38 @@ if !has("gui_running")
 endif
 
 " GUI color definitions
-let s:gui00        = "16161c"
-let g:base16_gui00 = "16161c"
-let s:gui01        = "1a1c23"
-let g:base16_gui01 = "1a1c23"
-let s:gui02        = "232530"
-let g:base16_gui02 = "232530"
-let s:gui03        = "2e303e"
-let g:base16_gui03 = "2e303e"
-let s:gui04        = "f9cec3"
-let g:base16_gui04 = "f9cec3"
-let s:gui05        = "f9cbbe"
-let g:base16_gui05 = "f9cbbe"
-let s:gui06        = "fadad1"
-let g:base16_gui06 = "fadad1"
-let s:gui07        = "fdf9ed"
-let g:base16_gui07 = "fdf9ed"
-let s:gui08        = "da103f"
-let g:base16_gui08 = "da103f"
-let s:gui09        = "f6661e"
-let g:base16_gui09 = "f6661e"
-let s:gui0A        = "f77d26"
-let g:base16_gui0A = "f77d26"
-let s:gui0B        = "09f7a0"
-let g:base16_gui0B = "09f7a0"
-let s:gui0C        = "26bbd9"
-let g:base16_gui0C = "26bbd9"
-let s:gui0D        = "1d8991"
-let g:base16_gui0D = "1d8991"
-let s:gui0E        = "8931b9"
-let g:base16_gui0E = "8931b9"
-let s:gui0F        = "dc3318"
-let g:base16_gui0F = "dc3318"
+let s:gui00        = "16161C"
+let g:base16_gui00 = "16161C"
+let s:gui01        = "232530"
+let g:base16_gui01 = "232530"
+let s:gui02        = "2E303E"
+let g:base16_gui02 = "2E303E"
+let s:gui03        = "6F6F70"
+let g:base16_gui03 = "6F6F70"
+let s:gui04        = "9DA0A2"
+let g:base16_gui04 = "9DA0A2"
+let s:gui05        = "CBCED0"
+let g:base16_gui05 = "CBCED0"
+let s:gui06        = "DCDFE4"
+let g:base16_gui06 = "DCDFE4"
+let s:gui07        = "E3E6EE"
+let g:base16_gui07 = "E3E6EE"
+let s:gui08        = "E95678"
+let g:base16_gui08 = "E95678"
+let s:gui09        = "F6661E"
+let g:base16_gui09 = "F6661E"
+let s:gui0A        = "FAC29A"
+let g:base16_gui0A = "FAC29A"
+let s:gui0B        = "27D796"
+let g:base16_gui0B = "27D796"
+let s:gui0C        = "21BFC2"
+let g:base16_gui0C = "21BFC2"
+let s:gui0D        = "25B2BC"
+let g:base16_gui0D = "25B2BC"
+let s:gui0E        = "B877DB"
+let g:base16_gui0E = "B877DB"
+let s:gui0F        = "FAB795"
+let g:base16_gui0F = "FAB795"
 
 " Terminal color definitions
 let s:cterm00        = "00"
@@ -99,22 +99,22 @@ endif
 
 " Neovim terminal colours
 if has("nvim")
-  let g:terminal_color_0 =  "#16161c"
-  let g:terminal_color_1 =  "#da103f"
-  let g:terminal_color_2 =  "#09f7a0"
-  let g:terminal_color_3 =  "#f77d26"
-  let g:terminal_color_4 =  "#1d8991"
-  let g:terminal_color_5 =  "#8931b9"
-  let g:terminal_color_6 =  "#26bbd9"
-  let g:terminal_color_7 =  "#f9cbbe"
-  let g:terminal_color_8 =  "#2e303e"
-  let g:terminal_color_9 =  "#da103f"
-  let g:terminal_color_10 = "#09f7a0"
-  let g:terminal_color_11 = "#f77d26"
-  let g:terminal_color_12 = "#1d8991"
-  let g:terminal_color_13 = "#8931b9"
-  let g:terminal_color_14 = "#26bbd9"
-  let g:terminal_color_15 = "#fdf9ed"
+  let g:terminal_color_0 =  "#16161C"
+  let g:terminal_color_1 =  "#E95678"
+  let g:terminal_color_2 =  "#27D796"
+  let g:terminal_color_3 =  "#FAC29A"
+  let g:terminal_color_4 =  "#25B2BC"
+  let g:terminal_color_5 =  "#B877DB"
+  let g:terminal_color_6 =  "#21BFC2"
+  let g:terminal_color_7 =  "#CBCED0"
+  let g:terminal_color_8 =  "#6F6F70"
+  let g:terminal_color_9 =  "#E95678"
+  let g:terminal_color_10 = "#27D796"
+  let g:terminal_color_11 = "#FAC29A"
+  let g:terminal_color_12 = "#25B2BC"
+  let g:terminal_color_13 = "#B877DB"
+  let g:terminal_color_14 = "#21BFC2"
+  let g:terminal_color_15 = "#E3E6EE"
   let g:terminal_color_background = g:terminal_color_0
   let g:terminal_color_foreground = g:terminal_color_5
   if &background == "light"
@@ -123,22 +123,22 @@ if has("nvim")
   endif
 elseif has("terminal")
   let g:terminal_ansi_colors = [
-        \ "#16161c",
-        \ "#da103f",
-        \ "#09f7a0",
-        \ "#f77d26",
-        \ "#1d8991",
-        \ "#8931b9",
-        \ "#26bbd9",
-        \ "#f9cbbe",
-        \ "#2e303e",
-        \ "#da103f",
-        \ "#09f7a0",
-        \ "#f77d26",
-        \ "#1d8991",
-        \ "#8931b9",
-        \ "#26bbd9",
-        \ "#fdf9ed",
+        \ "#16161C",
+        \ "#E95678",
+        \ "#27D796",
+        \ "#FAC29A",
+        \ "#25B2BC",
+        \ "#B877DB",
+        \ "#21BFC2",
+        \ "#CBCED0",
+        \ "#6F6F70",
+        \ "#E95678",
+        \ "#27D796",
+        \ "#FAC29A",
+        \ "#25B2BC",
+        \ "#B877DB",
+        \ "#21BFC2",
+        \ "#E3E6EE",
         \ ]
 endif
 

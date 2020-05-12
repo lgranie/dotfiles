@@ -1,22 +1,22 @@
-! Base16 Horizon Dark
-! Scheme: Michaël Ball (http://github.com/michael-ball/)
+! Base16 Horizon Dark 24
+! Scheme: Laurent Granié based on (https://horizontheme.netlify.app/)
 
-#define base00 #16161c
-#define base01 #1a1c23
-#define base02 #232530
-#define base03 #2e303e
-#define base04 #f9cec3
-#define base05 #f9cbbe
-#define base06 #fadad1
-#define base07 #fdf9ed
-#define base08 #da103f
-#define base09 #f6661e
-#define base0A #f77d26
-#define base0B #09f7a0
-#define base0C #26bbd9
-#define base0D #1d8991
-#define base0E #8931b9
-#define base0F #dc3318
+#define base00 #16161C
+#define base01 #232530
+#define base02 #2E303E
+#define base03 #6F6F70
+#define base04 #9DA0A2
+#define base05 #CBCED0
+#define base06 #DCDFE4
+#define base07 #E3E6EE
+#define base08 #E95678
+#define base09 #F6661E
+#define base0A #FAC29A
+#define base0B #27D796
+#define base0C #21BFC2
+#define base0D #25B2BC
+#define base0E #B877DB
+#define base0F #FAB795
 
 *foreground:   base05
 #ifdef background_opacity

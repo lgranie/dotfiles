@@ -1,31 +1,31 @@
 #!/bin/sh
 # base16-shell (https://github.com/chriskempson/base16-shell)
 # Base16 Shell template by Chris Kempson (http://chriskempson.com)
-# Horizon Dark scheme by Michaël Ball (http://github.com/michael-ball/)
+# Horizon Dark 24 scheme by Laurent Granié based on (https://horizontheme.netlify.app/)
 
 color00="16/16/1C" # Base 00 - Black
-color01="DA/10/3F" # Base 08 - Red
-color02="09/F7/A0" # Base 0B - Green
-color03="F7/7D/26" # Base 0A - Yellow
-color04="1D/89/91" # Base 0D - Blue
-color05="89/31/B9" # Base 0E - Magenta
-color06="26/BB/D9" # Base 0C - Cyan
-color07="F9/CB/BE" # Base 05 - White
-color08="2E/30/3E" # Base 03 - Bright Black
+color01="E9/56/78" # Base 08 - Red
+color02="27/D7/96" # Base 0B - Green
+color03="FA/C2/9A" # Base 0A - Yellow
+color04="25/B2/BC" # Base 0D - Blue
+color05="B8/77/DB" # Base 0E - Magenta
+color06="21/BF/C2" # Base 0C - Cyan
+color07="CB/CE/D0" # Base 05 - White
+color08="6F/6F/70" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
 color10=$color02 # Base 0B - Bright Green
 color11=$color03 # Base 0A - Bright Yellow
 color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
-color15="FD/F9/ED" # Base 07 - Bright White
+color15="E3/E6/EE" # Base 07 - Bright White
 color16="F6/66/1E" # Base 09
-color17="DC/33/18" # Base 0F
-color18="1A/1C/23" # Base 01
-color19="23/25/30" # Base 02
-color20="F9/CE/C3" # Base 04
-color21="FA/DA/D1" # Base 06
-color_foreground="F9/CB/BE" # Base 05
+color17="FA/B7/95" # Base 0F
+color18="23/25/30" # Base 01
+color19="2E/30/3E" # Base 02
+color20="9D/A0/A2" # Base 04
+color21="DC/DF/E4" # Base 06
+color_foreground="CB/CE/D0" # Base 05
 color_background="16/16/1C" # Base 00
 
 if [ -n "$TMUX" ]; then
@@ -78,13 +78,13 @@ put_template 21 $color21
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
-  put_template_custom Pg f9cbbe # foreground
-  put_template_custom Ph 16161c # background
-  put_template_custom Pi f9cbbe # bold color
-  put_template_custom Pj 232530 # selection color
-  put_template_custom Pk f9cbbe # selected text color
-  put_template_custom Pl f9cbbe # cursor
-  put_template_custom Pm 16161c # cursor text
+  put_template_custom Pg CBCED0 # foreground
+  put_template_custom Ph 16161C # background
+  put_template_custom Pi CBCED0 # bold color
+  put_template_custom Pj 2E303E # selection color
+  put_template_custom Pk CBCED0 # selected text color
+  put_template_custom Pl CBCED0 # cursor
+  put_template_custom Pm 16161C # cursor text
 else
   put_template_var 10 $color_foreground
   if [ "$BASE16_SHELL_SET_BACKGROUND" != false ]; then
