@@ -5,8 +5,8 @@
 [[ -e ~/.profile ]] && emulate sh -c 'source ~/.profile'
 
 # base16
-if [ -f ~/.config/local/base16.sh ]; then
-  source ~/.config/local/base16.sh
+if [ -f ~/.config/local/base24.sh ]; then
+  source ~/.config/local/base24.sh
 fi
 
 # Enable colors 
