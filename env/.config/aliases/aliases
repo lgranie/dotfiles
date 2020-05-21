@@ -22,6 +22,7 @@ function d2u () {
   sed -i 's/\r//' $1
 }
 
+alias v='vim'
 
 # ----------------------
 # Git Functions & Aliases
@@ -33,6 +34,39 @@ source ${XDG_CONFIG_HOME}/git/fzf-aliases
 source ${XDG_CONFIG_HOME}/forgit/forgit.plugin.sh
 
 alias gusmom='git submodule foreach git pull --rebase origin master'
+
+match_cherries() {
+    a="$(git rev-parse --verify "$1")" &&
+    b="$(git rev-parse --verify "$2")" &&
+    git rev-list "$a...$b" | xargs git show | git patch-id |
+      awk '
+        { p[$1] = p[$1] " " $2 }
+      END { 
+        gs = "git show -s --format=%ct "
+        for (i in p) {
+          l=length(p[i]) 
+          print p[i]
+          if (l>41) {
+            c1 = substr(p[i],2,41)
+            cmd = gs c1
+            while ( ( cmd | getline timestamp ) > 0 ) { 
+              t1 = timestamp
+            }
+            close(cmd)
+            c2 = substr(p[i],43,41)
+            cmd = gs " " c2
+            while ( ( cmd | getline timestamp ) > 0 ) {
+              t2 = timestamp
+            }
+            close(cmd)
+            if (t1 > t2) 
+              print c2 " -> " c1
+            else
+              print c2 " <- " c1
+          }
+        }
+      }'
+}
 
 #-----------------------
 # Apache Maven
