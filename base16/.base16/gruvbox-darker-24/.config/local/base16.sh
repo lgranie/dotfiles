@@ -1,10 +1,10 @@
 #!/bin/sh
 # base16-shell (https://github.com/chriskempson/base16-shell)
 # Base16 Shell template by Chris Kempson (http://chriskempson.com)
-# Gruvbox dark 24 scheme by Laurent Granié, Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
+# Gruvbox Dark 24 scheme by Laurent Granié, Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
 
-color00="1D/20/21" # Base 00 - Black
-color01="CC/24/1D" # Base 08 - Red
+color00="28/28/28" # Base 00 - Black
+color01="CC/24/41" # Base 08 - Red
 color02="98/97/1A" # Base 0B - Green
 color03="D7/99/21" # Base 0A - Yellow
 color04="45/85/88" # Base 0D - Blue
@@ -19,14 +19,14 @@ color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
 color15="FB/F1/C7" # Base 07 - Bright White
-color16="D6/5D/0E" # Base 09
-color17="92/83/74" # Base 0F
+color16="FE/80/19" # Base 09
+color17="D6/5D/0E" # Base 0F
 color18="3C/38/36" # Base 01
 color19="50/49/45" # Base 02
 color20="BD/AE/93" # Base 04
 color21="EB/DB/B2" # Base 06
 color_foreground="D5/C4/A1" # Base 05
-color_background="1D/20/21" # Base 00
+color_background="28/28/28" # Base 00
 
 if [ -n "$TMUX" ]; then
   # Tell tmux to pass the escape sequences through
@@ -79,12 +79,12 @@ put_template 21 $color21
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
   put_template_custom Pg d5c4a1 # foreground
-  put_template_custom Ph 1d2021 # background
+  put_template_custom Ph 282828 # background
   put_template_custom Pi d5c4a1 # bold color
   put_template_custom Pj 504945 # selection color
   put_template_custom Pk d5c4a1 # selected text color
   put_template_custom Pl d5c4a1 # cursor
-  put_template_custom Pm 1d2021 # cursor text
+  put_template_custom Pm 282828 # cursor text
 else
   put_template_var 10 $color_foreground
   if [ "$BASE16_SHELL_SET_BACKGROUND" != false ]; then

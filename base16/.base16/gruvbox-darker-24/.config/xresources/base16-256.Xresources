@@ -1,7 +1,7 @@
-! Base16 Gruvbox dark 24
+! Base16 Gruvbox Dark 24
 ! Scheme: Laurent Granié, Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
 
-#define base00 #1d2021
+#define base00 #282828
 #define base01 #3c3836
 #define base02 #504945
 #define base03 #665c54
@@ -9,14 +9,14 @@
 #define base05 #d5c4a1
 #define base06 #ebdbb2
 #define base07 #fbf1c7
-#define base08 #cc241d
-#define base09 #d65d0e
+#define base08 #cc2441
+#define base09 #fe8019
 #define base0A #d79921
 #define base0B #98971a
 #define base0C #689d6a
 #define base0D #458588
 #define base0E #b16286
-#define base0F #928374
+#define base0F #d65d0e
 
 *foreground:   base05
 #ifdef background_opacity

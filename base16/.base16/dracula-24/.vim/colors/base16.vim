@@ -2,7 +2,7 @@
 
 " base16-vim (https://github.com/chriskempson/base16-vim)
 " by Chris Kempson (http://chriskempson.com)
-" Dracula scheme by Laurent Granié based on Dracula Theme (https://spec.draculatheme.com)
+" Dracula 24 scheme by Laurent Granié based on Dracula Theme (https://spec.draculatheme.com)
 
 " This enables the coresponding base16-shell script to run so that
 " :colorscheme works in terminals supported by base16-shell scripts
@@ -31,20 +31,20 @@ let s:gui06        = "f1f2f8"
 let g:base16_gui06 = "f1f2f8"
 let s:gui07        = "f7f7fb"
 let g:base16_gui07 = "f7f7fb"
-let s:gui08        = "FF5555"
-let g:base16_gui08 = "FF5555"
+let s:gui08        = "FF6E6E"
+let g:base16_gui08 = "FF6E6E"
 let s:gui09        = "FFB86C"
 let g:base16_gui09 = "FFB86C"
-let s:gui0A        = "F1FA8C"
-let g:base16_gui0A = "F1FA8C"
-let s:gui0B        = "50FA7B"
-let g:base16_gui0B = "50FA7B"
-let s:gui0C        = "8BE9FD"
-let g:base16_gui0C = "8BE9FD"
-let s:gui0D        = "BD93F9"
-let g:base16_gui0D = "BD93F9"
-let s:gui0E        = "FF79C6"
-let g:base16_gui0E = "FF79C6"
+let s:gui0A        = "FFFFA5"
+let g:base16_gui0A = "FFFFA5"
+let s:gui0B        = "69FF94"
+let g:base16_gui0B = "69FF94"
+let s:gui0C        = "A4FFFF"
+let g:base16_gui0C = "A4FFFF"
+let s:gui0D        = "D6ACFF"
+let g:base16_gui0D = "D6ACFF"
+let s:gui0E        = "FF92DF"
+let g:base16_gui0E = "FF92DF"
 let s:gui0F        = "FFB86C"
 let g:base16_gui0F = "FFB86C"
 
@@ -100,20 +100,20 @@ endif
 " Neovim terminal colours
 if has("nvim")
   let g:terminal_color_0 =  "#282936"
-  let g:terminal_color_1 =  "#FF5555"
-  let g:terminal_color_2 =  "#50FA7B"
-  let g:terminal_color_3 =  "#F1FA8C"
-  let g:terminal_color_4 =  "#BD93F9"
-  let g:terminal_color_5 =  "#FF79C6"
-  let g:terminal_color_6 =  "#8BE9FD"
+  let g:terminal_color_1 =  "#FF6E6E"
+  let g:terminal_color_2 =  "#69FF94"
+  let g:terminal_color_3 =  "#FFFFA5"
+  let g:terminal_color_4 =  "#D6ACFF"
+  let g:terminal_color_5 =  "#FF92DF"
+  let g:terminal_color_6 =  "#A4FFFF"
   let g:terminal_color_7 =  "#e9e9f4"
   let g:terminal_color_8 =  "#626483"
-  let g:terminal_color_9 =  "#FF5555"
-  let g:terminal_color_10 = "#50FA7B"
-  let g:terminal_color_11 = "#F1FA8C"
-  let g:terminal_color_12 = "#BD93F9"
-  let g:terminal_color_13 = "#FF79C6"
-  let g:terminal_color_14 = "#8BE9FD"
+  let g:terminal_color_9 =  "#FF6E6E"
+  let g:terminal_color_10 = "#69FF94"
+  let g:terminal_color_11 = "#FFFFA5"
+  let g:terminal_color_12 = "#D6ACFF"
+  let g:terminal_color_13 = "#FF92DF"
+  let g:terminal_color_14 = "#A4FFFF"
   let g:terminal_color_15 = "#f7f7fb"
   let g:terminal_color_background = g:terminal_color_0
   let g:terminal_color_foreground = g:terminal_color_5
@@ -124,20 +124,20 @@ if has("nvim")
 elseif has("terminal")
   let g:terminal_ansi_colors = [
         \ "#282936",
-        \ "#FF5555",
-        \ "#50FA7B",
-        \ "#F1FA8C",
-        \ "#BD93F9",
-        \ "#FF79C6",
-        \ "#8BE9FD",
+        \ "#FF6E6E",
+        \ "#69FF94",
+        \ "#FFFFA5",
+        \ "#D6ACFF",
+        \ "#FF92DF",
+        \ "#A4FFFF",
         \ "#e9e9f4",
         \ "#626483",
-        \ "#FF5555",
-        \ "#50FA7B",
-        \ "#F1FA8C",
-        \ "#BD93F9",
-        \ "#FF79C6",
-        \ "#8BE9FD",
+        \ "#FF6E6E",
+        \ "#69FF94",
+        \ "#FFFFA5",
+        \ "#D6ACFF",
+        \ "#FF92DF",
+        \ "#A4FFFF",
         \ "#f7f7fb",
         \ ]
 endif

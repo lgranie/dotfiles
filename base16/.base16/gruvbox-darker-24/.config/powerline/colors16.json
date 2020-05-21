@@ -1,6 +1,6 @@
 {
 	"colors": {
-    "black": [0, "1d2021"],
+    "black": [0, "282828"],
     "white": [21, "ebdbb2"],
 
     "darkestgreen": [2, "98971a"],
@@ -19,22 +19,22 @@
     "steelblue":   [12, "458588"],
     "skyblue1":    [12, "458588"],
     
-    "red":          [1, "cc241d"],
-    "darkestred":   [1, "cc241d"],
-    "darkred":      [1, "cc241d"],
-    "mediumred":    [9, "cc241d"],
-    "brightred":    [9, "cc241d"],
-    "brightestred": [9, "cc241d"],
+    "red":          [1, "cc2441"],
+    "darkestred":   [1, "cc2441"],
+    "darkred":      [1, "cc2441"],
+    "mediumred":    [9, "cc2441"],
+    "brightred":    [9, "cc2441"],
+    "brightestred": [9, "cc2441"],
   
     "darkestpurple": [5, "b16286"],
     "mediumpurple":  [13, "b16286"],
     "brightpurple":  [13, "b16286"],
    
-    "darkorange":   [17, "d65d0e"],
-    "darkorange3":  [17, "d65d0e"],
-    "mediumorange": [16, "928374"],
-    "brightorange": [16, "928374"],
-    "orangered":    [16, "928374"],
+    "darkorange":   [17, "fe8019"],
+    "darkorange3":  [17, "fe8019"],
+    "mediumorange": [16, "d65d0e"],
+    "brightorange": [16, "d65d0e"],
+    "orangered":    [16, "d65d0e"],
 
     "gold3":            [3, "d79921"],
     "yellow":           [3, "d79921"],
@@ -55,8 +55,8 @@
     "gray10": [21, "ebdbb2"],
     "gray90": [21, "ebdbb2"],
 
-    "base16:base00": [0, "1d2021"],
-		"base16:base08": [1, "cc241d"],
+    "base16:base00": [0, "282828"],
+		"base16:base08": [1, "cc2441"],
 		"base16:base0B": [2, "98971a"],
 		"base16:base0A": [3, "d79921"],
 		"base16:base0D": [4, "458588"],
@@ -65,8 +65,8 @@
 		"base16:base05": [7, "d5c4a1"],
 		"base16:base03": [8, "665c54"],
 		"base16:base07": [15, "fbf1c7"],
-		"base16:base09": [16, "d65d0e"],
-		"base16:base0F": [17, "928374"],
+		"base16:base09": [16, "fe8019"],
+		"base16:base0F": [17, "d65d0e"],
 		"base16:base01": [18, "3c3836"],
 		"base16:base02": [19, "504945"],
 		"base16:base04": [20, "bdae93"],

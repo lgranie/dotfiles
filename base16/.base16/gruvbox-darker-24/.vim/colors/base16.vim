@@ -2,7 +2,7 @@
 
 " base16-vim (https://github.com/chriskempson/base16-vim)
 " by Chris Kempson (http://chriskempson.com)
-" Gruvbox dark 24 scheme by Laurent Granié, Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
+" Gruvbox Dark 24 scheme by Laurent Granié, Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
 
 " This enables the coresponding base16-shell script to run so that
 " :colorscheme works in terminals supported by base16-shell scripts
@@ -15,8 +15,8 @@ if !has("gui_running")
 endif
 
 " GUI color definitions
-let s:gui00        = "1d2021"
-let g:base16_gui00 = "1d2021"
+let s:gui00        = "282828"
+let g:base16_gui00 = "282828"
 let s:gui01        = "3c3836"
 let g:base16_gui01 = "3c3836"
 let s:gui02        = "504945"
@@ -31,10 +31,10 @@ let s:gui06        = "ebdbb2"
 let g:base16_gui06 = "ebdbb2"
 let s:gui07        = "fbf1c7"
 let g:base16_gui07 = "fbf1c7"
-let s:gui08        = "cc241d"
-let g:base16_gui08 = "cc241d"
-let s:gui09        = "d65d0e"
-let g:base16_gui09 = "d65d0e"
+let s:gui08        = "cc2441"
+let g:base16_gui08 = "cc2441"
+let s:gui09        = "fe8019"
+let g:base16_gui09 = "fe8019"
 let s:gui0A        = "d79921"
 let g:base16_gui0A = "d79921"
 let s:gui0B        = "98971a"
@@ -45,8 +45,8 @@ let s:gui0D        = "458588"
 let g:base16_gui0D = "458588"
 let s:gui0E        = "b16286"
 let g:base16_gui0E = "b16286"
-let s:gui0F        = "928374"
-let g:base16_gui0F = "928374"
+let s:gui0F        = "d65d0e"
+let g:base16_gui0F = "d65d0e"
 
 " Terminal color definitions
 let s:cterm00        = "00"
@@ -99,8 +99,8 @@ endif
 
 " Neovim terminal colours
 if has("nvim")
-  let g:terminal_color_0 =  "#1d2021"
-  let g:terminal_color_1 =  "#cc241d"
+  let g:terminal_color_0 =  "#282828"
+  let g:terminal_color_1 =  "#cc2441"
   let g:terminal_color_2 =  "#98971a"
   let g:terminal_color_3 =  "#d79921"
   let g:terminal_color_4 =  "#458588"
@@ -108,7 +108,7 @@ if has("nvim")
   let g:terminal_color_6 =  "#689d6a"
   let g:terminal_color_7 =  "#d5c4a1"
   let g:terminal_color_8 =  "#665c54"
-  let g:terminal_color_9 =  "#cc241d"
+  let g:terminal_color_9 =  "#cc2441"
   let g:terminal_color_10 = "#98971a"
   let g:terminal_color_11 = "#d79921"
   let g:terminal_color_12 = "#458588"
@@ -123,8 +123,8 @@ if has("nvim")
   endif
 elseif has("terminal")
   let g:terminal_ansi_colors = [
-        \ "#1d2021",
-        \ "#cc241d",
+        \ "#282828",
+        \ "#cc2441",
         \ "#98971a",
         \ "#d79921",
         \ "#458588",
@@ -132,7 +132,7 @@ elseif has("terminal")
         \ "#689d6a",
         \ "#d5c4a1",
         \ "#665c54",
-        \ "#cc241d",
+        \ "#cc2441",
         \ "#98971a",
         \ "#d79921",
         \ "#458588",

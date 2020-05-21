@@ -83,18 +83,18 @@ if exists("base16colorspace") && base16colorspace == "256"
   let s:cterm0F        = "17"
   let g:base16_cterm0F = "17"
 else
-  let s:cterm01        = "10"
-  let g:base16_cterm01 = "10"
-  let s:cterm02        = "11"
-  let g:base16_cterm02 = "11"
-  let s:cterm04        = "12"
-  let g:base16_cterm04 = "12"
-  let s:cterm06        = "13"
-  let g:base16_cterm06 = "13"
-  let s:cterm09        = "09"
-  let g:base16_cterm09 = "09"
-  let s:cterm0F        = "14"
-  let g:base16_cterm0F = "14"
+  let s:cterm10        = "09"
+  let g:base16_cterm10 = "09"
+  let s:cterm12        = "10"
+  let g:base16_cterm12 = "10"
+  let s:cterm11        = "11"
+  let g:base16_cterm11 = "11"
+  let s:cterm14        = "12"
+  let g:base16_cterm14 = "12"
+  let s:cterm15        = "13"
+  let g:base16_cterm15 = "13"
+  let s:cterm13        = "14"
+  let g:base16_cterm13 = "14"
 endif
 
 " Neovim terminal colours
@@ -108,12 +108,12 @@ if has("nvim")
   let g:terminal_color_6 =  "#59E1E3"
   let g:terminal_color_7 =  "#CBCED0"
   let g:terminal_color_8 =  "#6F6F70"
-  let g:terminal_color_9 =  "#E95678"
-  let g:terminal_color_10 = "#29D398"
-  let g:terminal_color_11 = "#FAB795"
-  let g:terminal_color_12 = "#26BBD9"
-  let g:terminal_color_13 = "#EE64AC"
-  let g:terminal_color_14 = "#59E1E3"
+  let g:terminal_color_9 =  "#DA103F"
+  let g:terminal_color_10 = "#1EB980"
+  let g:terminal_color_11 = "#FAB28E"
+  let g:terminal_color_12 = "#1D8991"
+  let g:terminal_color_13 = "#8931B9"
+  let g:terminal_color_14 = "#1EAEAE"
   let g:terminal_color_15 = "#E3E6EE"
   let g:terminal_color_background = g:terminal_color_0
   let g:terminal_color_foreground = g:terminal_color_5
@@ -132,12 +132,12 @@ elseif has("terminal")
         \ "#59E1E3",
         \ "#CBCED0",
         \ "#6F6F70",
-        \ "#E95678",
-        \ "#29D398",
-        \ "#FAB795",
-        \ "#26BBD9",
-        \ "#EE64AC",
-        \ "#59E1E3",
+        \ "#DA103F",
+        \ "#1EB980",
+        \ "#FAB28E",
+        \ "#1D8991",
+        \ "#8931B9",
+        \ "#1EAEAE",
         \ "#E3E6EE",
         \ ]
 endif

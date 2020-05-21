@@ -1,23 +1,23 @@
 #!/bin/sh
 # base16-shell (https://github.com/chriskempson/base16-shell)
 # Base16 Shell template by Chris Kempson (http://chriskempson.com)
-# Dracula scheme by Laurent Granié based on Dracula Theme (https://spec.draculatheme.com)
+# Dracula 24 scheme by Laurent Granié based on Dracula Theme (https://spec.draculatheme.com)
 
 color00="28/29/36" # Base 00 - Black
-color01="FF/55/55" # Base 08 - Red
-color02="50/FA/7B" # Base 0B - Green
-color03="F1/FA/8C" # Base 0A - Yellow
-color04="BD/93/F9" # Base 0D - Blue
-color05="FF/79/C6" # Base 0E - Magenta
-color06="8B/E9/FD" # Base 0C - Cyan
+color01="FF/6E/6E" # Base 08 - Red
+color02="69/FF/94" # Base 0B - Green
+color03="FF/FF/A5" # Base 0A - Yellow
+color04="D6/AC/FF" # Base 0D - Blue
+color05="FF/92/DF" # Base 0E - Magenta
+color06="A4/FF/FF" # Base 0C - Cyan
 color07="E9/E9/F4" # Base 05 - White
 color08="62/64/83" # Base 03 - Bright Black
-color09="FF/6E/6E" # Base 10 - Bright Red
-color10="69/FF/94" # Base 12 - Bright Green
-color11="FF/FF/A5" # Base 11 - Bright Yellow
-color12="D6/AC/FF" # Base 14 - Bright Blue
-color13="FF/92/DF" # Base 15 - Bright Magenta
-color14="D6/FF/FF" # Base 13 - Bright Cyan
+color09="FF/55/55" # Base 10 - Bright Red
+color10="50/FA/7B" # Base 12 - Bright Green
+color11="F1/FA/8C" # Base 11 - Bright Yellow
+color12="BD/93/F9" # Base 14 - Bright Blue
+color13="FF/79/C6" # Base 15 - Bright Magenta
+color14="8B/E9/FD" # Base 13 - Bright Cyan
 color15="F7/F7/FB" # Base 07 - Bright White
 color16="FF/B8/6C" # Base 09 - Bright orange
 color17="FF/B8/6C" # Base 0F - orange
