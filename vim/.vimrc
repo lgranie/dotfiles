@@ -112,7 +112,7 @@ endif
 let base16colorspace=256
 syntax on
 set background=dark
-colorscheme base16
+colorscheme base24
 set t_Co=256
 
 " font
