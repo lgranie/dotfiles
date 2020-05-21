@@ -59,3 +59,4 @@ fi
 XMLLINT_INDENT=  
 
 [ -f ${XDG_CONFIG_HOME}/local/bashrc ] && source ${XDG_CONFIG_HOME}/local/bashrc
+
