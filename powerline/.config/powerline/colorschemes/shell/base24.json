@@ -1,0 +1,13 @@
+{
+	"name": "base24",
+	"groups": {
+		"mode": { "fg": "base24:base07", "bg": "base24:base0B", "attrs": ["bold"] }
+	},
+	"mode_translations": {
+		"vicmd": {
+			"groups": {
+				"mode": { "fg": "base24:base07", "bg": "base24:base0D", "attrs": ["bold"] }
+			}
+		}
+	}
+}
