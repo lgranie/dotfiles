@@ -23,3 +23,4 @@
 [core]
   fileMode = false
   autocrlf = input
+	editor = vim
