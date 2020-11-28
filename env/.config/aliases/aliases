@@ -27,6 +27,27 @@ alias v='vim'
 
 alias cuol='curl -OL'
 
+function stf () {
+  CURRENT_DIR=$(pwd)
+  SPLIT_DIR=$1
+  sudo chown -R $(id -u):$(id -g) "${SPLIT_DIR}"
+
+  find ${CURRENT_DIR}/${SPLIT_DIR} -name "*cue" -type f | while read c; do
+    cd "$(dirname "$c")";
+    mkdir "$(basename "$c" .cue)"
+    
+    # convert ape to flac
+    [ -f "$(basename "$c" .cue).ape" ] && ffmpeg -i "$(basename "$c" .cue).ape" "$(basename "$c" .cue).flac"
+    
+    # split flac
+    [ -f "$(basename "$c" .cue).flac" ] && shnsplit -d "$(basename "$c" .cue)" -t %n-%t -o flac -f "$(basename "$c")" "$(basename "$c" .cue).flac"
+    
+    # tag split flac
+    cuetag "$(basename "$c")" "$(basename "$c" .cue)"/*.flac
+    cd -; 
+  done
+}
+
 function t4j() {
   tail -f $1 | sed --unbuffered -e 's/\(\[[0-9]\{2\}.*\]\)\s/\o033[1;34m\1/' \
                             -e 's/\(\[SEVERE.*\)/\o033[31m\1\o033[39m/' \
