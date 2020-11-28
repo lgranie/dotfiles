@@ -14,13 +14,13 @@ import:
     from_scratch: no
     quiet_fallback: skip
     none_rec_action: ask
-    timid: no
+    timid: yes
     log:
     autotag: yes
     quiet: no
     singletons: no
     default_action: apply
-    languages: []
+    languages: [en]
     detail: no
     flat: no
     group_albums: no
@@ -30,7 +30,7 @@ import:
     bell: no
     set_fields: {}
 
-clutter: [Thumbs.DB, .DS_Store]
+clutter: [Thumbs.DB, .DS_Store, cover.jpg]
 ignore:
 - .*
 - '*~'
@@ -62,7 +62,7 @@ overwrite_null:
     album: []
     track: []
 
-plugins: [inline,lastgenre,fetchart]
+plugins: [inline, lastgenre, fetchart]
 pluginpath: []
 threaded: yes
 timeout: 5.0
@@ -98,6 +98,7 @@ sort_case_insensitive: yes
 
 paths:
     default: $genre/$albumartist/$lge_year - $album%aunique{} (%ifdef{label,$label - }$year)/%if{$multidisc,%if{$disctitle,$disc - $disctitle/,$disc-}}$track $title
+    albumtype:soundtrack: Soundtrack/$lge_year - $album%aunique{} (%ifdef{label,$label - }$year)/%if{$multidisc,%if{$disctitle,$disc - $disctitle/,$disc-}}$track $title
     singleton: $genre/Non-Album/$artist/$title
     comp: $genre/Compilations/$lge_year - $album%aunique{} (%ifdef{label,$label - }$year)/%if{$multidisc,%if{$disctitle,$disc - $disctitle/,$disc-}}$track $title
 
@@ -119,7 +120,7 @@ musicbrainz:
     host: musicbrainz.org
     ratelimit: 1
     ratelimit_interval: 1.0
-    searchlimit: 5
+    searchlimit: 10
 
 match:
     strong_rec_thresh: 0.04
