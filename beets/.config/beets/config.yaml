@@ -47,7 +47,7 @@ replace:
     \s+$: ''
     ^\s+: ''
     ^-: _
-    featuring: feat.
+    (?i)featuring: feat.
 path_sep_replace: _
 asciify_paths: no
 art_filename: cover
@@ -111,7 +111,6 @@ lastgenre:
     whitelist: ~/.config/beets/whitelist.yaml
 
 fetchart:
-    enforce_ratio: 5%
     minwidth: 400
 
 statefile: state.pickle
