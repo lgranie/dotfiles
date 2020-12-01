@@ -29,21 +29,25 @@ alias cuol='curl -OL'
 
 function stf () {
   CURRENT_DIR=$(pwd)
-  SPLIT_DIR=$1
-  sudo chown -R $(id -u):$(id -g) "${SPLIT_DIR}"
+  SPLIT_DIR="$1"
+  sudo chown -R $(id -u):$(id -g) ${SPLIT_DIR}
 
-  find ${CURRENT_DIR}/${SPLIT_DIR} -name "*cue" -type f | while read c; do
-    cd "$(dirname "$c")";
-    mkdir "$(basename "$c" .cue)"
+  find "${CURRENT_DIR}/${SPLIT_DIR}" -name "*cue" -type f | while read c; do
+    APE_FILE=$(basename ${c} cue)ape
+    FLAC_FILE=$(basename ${c} cue)flac
+    CUE_DIR=$(dirname ${c});
+    
+    cd ${CUE_DIR}
     
     # convert ape to flac
-    [ -f "$(basename "$c" .cue).ape" ] && ffmpeg -i "$(basename "$c" .cue).ape" "$(basename "$c" .cue).flac"
+    [ -f ${APE_FILE} ] && ffmpeg -i "${APE_FILE}" -y "${FLAC_FILE}" < /dev/null
     
     # split flac
-    [ -f "$(basename "$c" .cue).flac" ] && shnsplit -d "$(basename "$c" .cue)" -t %n-%t -o flac -f "$(basename "$c")" "$(basename "$c" .cue).flac"
+    mkdir -p "$(basename ${c} .cue)"
+    [ -f ${FLAC_FILE} ] && shnsplit -O always -d "$(basename ${c} .cue)" -t %n-%t -o flac -f "$(basename ${c})" "${FLAC_FILE}"
     
     # tag split flac
-    cuetag "$(basename "$c")" "$(basename "$c" .cue)"/*.flac
+    cuetag $(basename ${c}) $(basename ${c} .cue)/*
     cd -; 
   done
 }
