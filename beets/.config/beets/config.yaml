@@ -62,7 +62,7 @@ overwrite_null:
     album: []
     track: []
 
-plugins: [inline, lastgenre, fetchart]
+plugins: [inline, lastgenre, fetchart, discogs]
 pluginpath: []
 threaded: yes
 timeout: 5.0
