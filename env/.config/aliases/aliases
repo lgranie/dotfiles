@@ -27,10 +27,10 @@ alias v='vim'
 
 alias cuol='curl -OL'
 
+alias bi='beet import'
 function stf () {
   CURRENT_DIR=$(pwd)
-  SPLIT_DIR=${1}
-  sudo chown -R $(id -u):$(id -g) ${SPLIT_DIR}
+  SPLIT_DIR="${1}"
 
   find "${CURRENT_DIR}/${SPLIT_DIR}" -name "*cue" -type f | while read c; do
     APE_FILE=$(basename "${c}" cue)ape
