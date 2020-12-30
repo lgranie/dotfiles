@@ -12,7 +12,7 @@ fi
 
 alias rm='rm -i'
 alias mv='mv -i'
-alias le='less'
+alias le='less -FXRi'
 alias du='du -h -d 1'
 alias df='df -h'
 alias env='env | sort'
@@ -26,6 +26,41 @@ function d2u () {
 alias v='vim'
 
 alias cuol='curl -OL'
+
+function bi () {
+  beet import "${1}"
+}
+
+function stf () {
+  CURRENT_DIR=$(pwd)
+  SPLIT_DIR="${1}"
+
+  find "${CURRENT_DIR}/${SPLIT_DIR}" -name "*cue" -type f | while read c; do
+    APE_FILE=$(basename "${c}" cue)ape
+    FLAC_FILE=$(basename "${c}" cue)flac
+    CUE_DIR=$(dirname "${c}");
+    
+    cd ${CUE_DIR}
+    
+    # convert ape to flac
+    [ -f ${APE_FILE} ] && ffmpeg -i "${APE_FILE}" -y "${FLAC_FILE}" < /dev/null
+    
+    # split flac
+    mkdir -p "$(basename ${c} .cue)"
+    [ -f ${FLAC_FILE} ] && shnsplit -O always -d "$(basename ${c} .cue)" -t %n-%t -o flac -f "$(basename ${c})" "${FLAC_FILE}"
+    
+    # tag split flac
+    cuetag "$(basename ${c})" "$(basename ${c} .cue)/*"
+    cd -; 
+  done
+}
+
+function resample-beet () {
+  beet ls -p bitdepth:24 | while read f; do
+    mkdir -p "resampled/$(basename "$(dirname "${f}")")"
+    sox -S -G "${f}" -r 48000 -b 16 "./resampled/$(basename "$(dirname "${f}")")/$(basename "${f}")"
+  done
+}
 
 function t4j() {
   tail -f $1 | sed --unbuffered -e 's/\(\[[0-9]\{2\}.*\]\)\s/\o033[1;34m\1/' \
