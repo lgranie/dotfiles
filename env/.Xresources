@@ -1,5 +1,5 @@
 !base16
-#include "./.config/xresources/base16-256.Xresources"
+#include "./.config/xresources/base16-256-24.Xresources"
 
 !xft
 #include "./dotfiles/Xresources/xft"

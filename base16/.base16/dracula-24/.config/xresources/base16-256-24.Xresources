@@ -1,0 +1,54 @@
+! Base16 Dracula 24
+! Scheme: Laurent Granié based on Dracula Theme (https://spec.draculatheme.com)
+
+#define base00 #282936
+#define base01 #3a3c4e
+#define base02 #4d4f68
+#define base03 #626483
+#define base04 #62d6e8
+#define base05 #e9e9f4
+#define base06 #f1f2f8
+#define base07 #f7f7fb
+#define base08 #FF6E6E
+#define base09 #FFB86C
+#define base0A #FFFFA5
+#define base0B #69FF94
+#define base0C #A4FFFF
+#define base0D #D6ACFF
+#define base0E #FF92DF
+#define base0F #FFB86C
+
+*foreground:   base05
+#ifdef background_opacity
+*background:   [background_opacity]base00
+#else
+*background:   base00
+#endif
+*cursorColor:  base05
+
+*color0:       base00
+*color1:       base08
+*color2:       base0B
+*color3:       base0A
+*color4:       base0D
+*color5:       base0E
+*color6:       base0C
+*color7:       base05
+
+*color8:       base03
+*color9:       base10
+*color10:      base12
+*color11:      base11
+*color12:      base14
+*color13:      base15
+*color14:      base13
+*color15:      base07
+
+! Note: colors beyond 15 might not be loaded (e.g., xterm, urxvt),
+! use 'shell' template to set these if necessary
+*color16:      base09
+*color17:      base0F
+*color18:      base01
+*color19:      base02
+*color20:      base04
+*color21:      base06
