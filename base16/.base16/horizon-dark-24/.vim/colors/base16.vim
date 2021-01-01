@@ -35,18 +35,18 @@ let s:gui08        = "E95678"
 let g:base16_gui08 = "E95678"
 let s:gui09        = "F6661E"
 let g:base16_gui09 = "F6661E"
-let s:gui0A        = "FAB795"
-let g:base16_gui0A = "FAB795"
-let s:gui0B        = "29D398"
-let g:base16_gui0B = "29D398"
-let s:gui0C        = "59E1E3"
-let g:base16_gui0C = "59E1E3"
-let s:gui0D        = "26BBD9"
-let g:base16_gui0D = "26BBD9"
-let s:gui0E        = "EE64AC"
-let g:base16_gui0E = "EE64AC"
-let s:gui0F        = "F09383"
-let g:base16_gui0F = "F09383"
+let s:gui0A        = "FAC29A"
+let g:base16_gui0A = "FAC29A"
+let s:gui0B        = "27D796"
+let g:base16_gui0B = "27D796"
+let s:gui0C        = "21BFC2"
+let g:base16_gui0C = "21BFC2"
+let s:gui0D        = "25B2BC"
+let g:base16_gui0D = "25B2BC"
+let s:gui0E        = "B877DB"
+let g:base16_gui0E = "B877DB"
+let s:gui0F        = "FAB795"
+let g:base16_gui0F = "FAB795"
 
 " Terminal color definitions
 let s:cterm00        = "00"
@@ -101,19 +101,19 @@ endif
 if has("nvim")
   let g:terminal_color_0 =  "#16161C"
   let g:terminal_color_1 =  "#E95678"
-  let g:terminal_color_2 =  "#29D398"
-  let g:terminal_color_3 =  "#FAB795"
-  let g:terminal_color_4 =  "#26BBD9"
-  let g:terminal_color_5 =  "#EE64AC"
-  let g:terminal_color_6 =  "#59E1E3"
+  let g:terminal_color_2 =  "#27D796"
+  let g:terminal_color_3 =  "#FAC29A"
+  let g:terminal_color_4 =  "#25B2BC"
+  let g:terminal_color_5 =  "#B877DB"
+  let g:terminal_color_6 =  "#21BFC2"
   let g:terminal_color_7 =  "#CBCED0"
   let g:terminal_color_8 =  "#6F6F70"
   let g:terminal_color_9 =  "#E95678"
-  let g:terminal_color_10 = "#29D398"
-  let g:terminal_color_11 = "#FAB795"
-  let g:terminal_color_12 = "#26BBD9"
-  let g:terminal_color_13 = "#EE64AC"
-  let g:terminal_color_14 = "#59E1E3"
+  let g:terminal_color_10 = "#27D796"
+  let g:terminal_color_11 = "#FAC29A"
+  let g:terminal_color_12 = "#25B2BC"
+  let g:terminal_color_13 = "#B877DB"
+  let g:terminal_color_14 = "#21BFC2"
   let g:terminal_color_15 = "#E3E6EE"
   let g:terminal_color_background = g:terminal_color_0
   let g:terminal_color_foreground = g:terminal_color_5
@@ -125,19 +125,19 @@ elseif has("terminal")
   let g:terminal_ansi_colors = [
         \ "#16161C",
         \ "#E95678",
-        \ "#29D398",
-        \ "#FAB795",
-        \ "#26BBD9",
-        \ "#EE64AC",
-        \ "#59E1E3",
+        \ "#27D796",
+        \ "#FAC29A",
+        \ "#25B2BC",
+        \ "#B877DB",
+        \ "#21BFC2",
         \ "#CBCED0",
         \ "#6F6F70",
         \ "#E95678",
-        \ "#29D398",
-        \ "#FAB795",
-        \ "#26BBD9",
-        \ "#EE64AC",
-        \ "#59E1E3",
+        \ "#27D796",
+        \ "#FAC29A",
+        \ "#25B2BC",
+        \ "#B877DB",
+        \ "#21BFC2",
         \ "#E3E6EE",
         \ ]
 endif

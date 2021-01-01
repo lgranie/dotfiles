@@ -1,28 +1,28 @@
-! Base16 Horizon Dark 24
-! Scheme: Laurent Granié based on (https://horizontheme.netlify.app/)
+! Base16 Gruvbox Dark 24
+! Scheme: Laurent Granié, Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
 
-#define base00 #16161C
-#define base01 #232530
-#define base02 #2E303E
-#define base03 #6F6F70
-#define base04 #9DA0A2
-#define base05 #CBCED0
-#define base06 #DCDFE4
-#define base07 #E3E6EE
-#define base08 #E95678
-#define base09 #F6661E
-#define base0A #FAC29A
-#define base0B #27D796
-#define base0C #21BFC2
-#define base0D #25B2BC
-#define base0E #B877DB
-#define base0F #FAB795
-#define base10 #
-#define base11 #
-#define base12 #
-#define base13 #
-#define base14 #
-#define base15 #
+#define base00 #282828
+#define base01 #3c3836
+#define base02 #504945
+#define base03 #665c54
+#define base04 #bdae93
+#define base05 #d5c4a1
+#define base06 #ebdbb2
+#define base07 #fbf1c7
+#define base08 #cc2441
+#define base09 #fe8019
+#define base0A #d79921
+#define base0B #98971a
+#define base0C #689d6a
+#define base0D #458588
+#define base0E #b16286
+#define base0F #d65d0e
+#define base10 #fb4934
+#define base11 #fabd2f
+#define base12 #b8bb26
+#define base13 #8ec07c
+#define base14 #83a598
+#define base15 #d3869b
 
 *foreground:   base05
 #ifdef background_opacity
