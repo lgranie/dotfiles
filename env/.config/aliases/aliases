@@ -38,9 +38,9 @@ function stf () {
   find "${CURRENT_DIR}/${SPLIT_DIR}" -name "*cue" -type f | while read c; do
     APE_FILE=$(basename "${c}" cue)ape
     FLAC_FILE=$(basename "${c}" cue)flac
-    CUE_DIR=$(dirname "${c}");
+    CUE_DIR=$(dirname "${c}")
     
-    cd ${CUE_DIR}
+    cd "${CUE_DIR}"
     
     # convert ape to flac
     [ -f ${APE_FILE} ] && ffmpeg -i "${APE_FILE}" -y "${FLAC_FILE}" < /dev/null
