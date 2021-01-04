@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-	urxvt -e bash -c tmux
+	urxvt -e zsh -c tmux
 
 # program launcher
 super + @space
