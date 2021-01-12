@@ -36,6 +36,7 @@ function stf () {
   SPLIT_DIR="${1}"
 
   find "${CURRENT_DIR}/${SPLIT_DIR}" -name "*cue" -type f | while read c; do
+    echo ${c}
     APE_FILE=$(basename "${c}" cue)ape
     FLAC_FILE=$(basename "${c}" cue)flac
     CUE_DIR=$(dirname "${c}")
@@ -48,7 +49,8 @@ function stf () {
     # split flac
     mkdir -p "$(basename ${c} .cue)"
     [ -f ${FLAC_FILE} ] && shnsplit -O always -d "$(basename ${c} .cue)" -t %n-%t -o flac -f "$(basename ${c})" "${FLAC_FILE}"
-    
+    rm -rf "$(basename ${c} .cue)"**/00-pregap.flac
+
     # tag split flac
     cuetag "$(basename ${c})" "$(basename ${c} .cue)/*"
     cd -; 
