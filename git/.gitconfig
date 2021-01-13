@@ -1,6 +1,3 @@
-[user]
-  email = laurent.granie@gmail.com
-	name = Laurent Granié (Github key)
 [status]
   submoduleSummary = true
 [diff]
@@ -24,7 +21,3 @@
   fileMode = false
   autocrlf = input
 	editor = vim
-[gpg]
-	program = gpg2
-[commit]
-	gpgsign = true
