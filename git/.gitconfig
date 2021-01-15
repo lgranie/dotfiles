@@ -1,3 +1,5 @@
+[user]
+  name = Laurent Granié
 [status]
   submoduleSummary = true
 [diff]
@@ -5,6 +7,8 @@
   submodule = log
 [difftool]
   prompt = false
+[pull]
+  rebase = true
 [merge]
   tool = vimdiff
   conflictstyle = diff3
@@ -15,9 +19,9 @@
   keepBackup = false
 [fetch]
   recurseSubmodules = on-demand
-[include]
-  path = ~/.config/local/gitconfig
 [core]
   fileMode = false
   autocrlf = input
-	editor = vim
+  editor = vim
+[include]
+  path = ~/.config/local/gitconfig
