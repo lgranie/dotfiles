@@ -17,12 +17,12 @@
 #define base0D #25B2BC
 #define base0E #B877DB
 #define base0F #FAB795
-#define base10 #
-#define base11 #
-#define base12 #
-#define base13 #
-#define base14 #
-#define base15 #
+#define base10 #DA103F
+#define base11 #FAB28E
+#define base12 #1EB980
+#define base13 #1EAEAE
+#define base14 #1D8991
+#define base15 #8931B9
 
 *foreground:   base05
 #ifdef background_opacity

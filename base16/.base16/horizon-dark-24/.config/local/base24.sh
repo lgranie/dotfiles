@@ -50,16 +50,16 @@ else
 fi
 
 # 16 color space
-put_template 0  $color00
-put_template 1  $color01
-put_template 2  $color02
-put_template 3  $color03
-put_template 4  $color04
-put_template 5  $color05
-put_template 6  $color06
-put_template 7  $color07
-put_template 8  $color08
-put_template 9  $color09
+put_template 0 $color00
+put_template 1 $color01
+put_template 2 $color02
+put_template 3 $color03
+put_template 4 $color04
+put_template 5 $color05
+put_template 6 $color06
+put_template 7 $color07
+put_template 8 $color08
+put_template 9 $color09
 put_template 10 $color10
 put_template 11 $color11
 put_template 12 $color12
