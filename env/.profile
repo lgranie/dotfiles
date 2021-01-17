@@ -19,6 +19,9 @@ export PATH="$NPM_PACKAGES/bin:$PATH"
 # history
 export HISTFILE=${XDG_DATA_HOME}/history
 
+# sign git commit with gpg
+export GPG_TTY=$(tty)
+
 # aliases
 [ -f ${XDG_CONFIG_HOME}/aliases/aliases ] && . ${XDG_CONFIG_HOME}/aliases/aliases
  
