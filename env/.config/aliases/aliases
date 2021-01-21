@@ -146,5 +146,5 @@ function udist () {
   deborphan;
 }
 
-[ -f ${XDG_CONFIG_HOME}/local/aliases ] && . ${XDG_CONFIG_HOME}/local/aliases
+[[ -f ${XDG_CONFIG_HOME}/local/aliases ]] && . ${XDG_CONFIG_HOME}/local/aliases
 
