@@ -1,8 +1,7 @@
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
-  alias ll='exa -l'
-  alias la='exa -a'
-  alias lla='exa -al'
+  alias l='exa -l'
+  alias la='exa -al'
 
   alias grep='grep --color=auto'
   alias fgrep='fgrep --color=auto'
