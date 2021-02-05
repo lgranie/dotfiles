@@ -25,3 +25,5 @@
   editor = vim
 [include]
   path = ~/.config/local/gitconfig
+[color]
+	ui = auto
