@@ -1,5 +1,5 @@
-library: /media/Music/beets.db
-directory: /media/Music
+library: /media/music/beets.db
+directory: /media/music
 
 import:
     write: yes
