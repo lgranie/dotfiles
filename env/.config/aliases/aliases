@@ -2,6 +2,7 @@
 if [ -x /usr/bin/dircolors ]; then
   alias l='exa -l'
   alias ll='exa -gla'
+  alias lla='ls -la --color'
 
   alias grep='grep --color=auto'
   alias fgrep='fgrep --color=auto'
