@@ -16,6 +16,7 @@ alias du='du -h -d 1'
 alias df='df -h'
 alias env='env | sort'
 alias dmesg='sudo dmesg -T'
+alias fd='/usr/lib/cargo/bin/fd'
 
 alias unzip='7z x'
 
@@ -147,14 +148,18 @@ function udist () {
   deborphan;
 }
 
+function find_downloaded_videos {
+  fd -e mp4 -e mkv . '/media/downloads' | fzf --delimiter / --with-nth -1
+}
+
 function plm {
   #sudo su -P -s /bin/bash -c "export XDG_RUNTIME_DIR=/run/user/$(id -u vlcd) && mpv --sub-auto=all $1" vlcd
-  mpv --sub-auto=all $1
+  mpv --sub-auto=all "$(find_downloaded_videos)"
 }
 
 function pls {
   #sudo su -P -s /bin/bash -c "export XDG_RUNTIME_DIR=/run/user/$(id -u vlcd) && mpv --sub-auto=exact $1" vlcd
-  mpv --sub-auto=exact $1
+  mpv --sub-auto=exact "$(find_downloaded_videos)"
 }
 
 [[ -f ${XDG_CONFIG_HOME}/local/aliases ]] && . ${XDG_CONFIG_HOME}/local/aliases
