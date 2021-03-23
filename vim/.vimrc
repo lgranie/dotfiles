@@ -65,8 +65,6 @@ set runtimepath+=$HOME/.vim/bundle/asyncomplete.vim
 set runtimepath+=$HOME/.vim/bundle/asyncomplete-lsp.vim
 set runtimepath+=$HOME/.vim/bundle/vim-lsp
 set runtimepath+=$HOME/.vim/bundle/vim-lsp-java
-set runtimepath+=$HOME/.vim/bundle/vim-lsp-typescript
-set runtimepath+=$HOME/.vim/bundle/vim-lsp-javascript
 set runtimepath+=$HOME/.vim/bundle/vim-lsp-bash
 
 set runtimepath+=$HOME/.vim/bundle/vim-jdb
@@ -83,7 +81,7 @@ let g:lsp_log_file = expand('/tmp/vim-lsp.log')
 let g:lsp_diagnostics_enabled = 1     " enable diagnostics support
 let g:lsp_diagnostics_echo_cursor = 1 " enable echo under cursor when in normal mode
 
-let g:lsp_signs_enabled = 1           " enable signs
+" let g:lsp_signs_enabled = 1           " enable signs
 " let g:lsp_signs_enabled = get(g:, 'lsp_signs_enabled', has('patch-8.1.0772') && exists('*sign_define'))
 let g:lsp_signs_error = {'text': '✗'}
 let g:lsp_signs_warning = {'text': '‼'}
