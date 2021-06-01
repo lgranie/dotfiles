@@ -149,12 +149,14 @@ function udist () {
 }
 
 function find_downloaded_videos {
-  fd -e mp4 -e mkv . '/media/downloads' | fzf --delimiter / --with-nth -1
+  fd -e mp4 -e mkv . '/media/downloads' | sort | fzf --delimiter / --with-nth -1
 }
 
 function plm {
   #sudo su -P -s /bin/bash -c "export XDG_RUNTIME_DIR=/run/user/$(id -u vlcd) && mpv --sub-auto=all $1" vlcd
-  mpv --sub-auto=all "$(find_downloaded_videos)"
+  movie="$(find_downloaded_videos)"
+  echo ${movie}
+  mpv --sub-auto=all "${movie}"
 }
 
 function pls {
