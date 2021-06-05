@@ -31,3 +31,6 @@
 [submodule "vim/.vim/bundle/vimwiki"]
 	path = vim/.vim/bundle/vimwiki
 	url = https://github.com/vimwiki/vimwiki.git
+[submodule "vim/.vim/bundle/vim-lsp-groovy"]
+	path = vim/.vim/bundle/vim-lsp-groovy
+	url = https://github.com/lgranie/vim-lsp-groovy.git
