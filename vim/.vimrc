@@ -35,6 +35,10 @@ set visualbell    " stop that ANNOYING beeping
 set wildmenu
 set wildmode=list:longest,full
 
+" Leader key
+let mapleader=" "
+set timeoutlen=500
+
 " Navigate split window
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -55,6 +59,7 @@ set runtimepath+=$HOME/.vim/bundle/vim-tmux-navigator
 
 set runtimepath+=/usr/share/doc/fzf/examples
 set runtimepath+=$HOME/.vim/bundle/fzf.vim
+nnoremap <leader>s :GFile<CR>
 
 set runtimepath+=$HOME/.vim/bundle/colorizer.vim
 
