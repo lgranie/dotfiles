@@ -59,8 +59,12 @@ set runtimepath+=$HOME/.vim/bundle/vim-tmux-navigator
 
 set runtimepath+=/usr/share/doc/fzf/examples
 set runtimepath+=$HOME/.vim/bundle/fzf.vim
-nnoremap <leader>s :Files<CR>
-nnoremap <leader>g :GFile<CR>
+let g:fzf_command_prefix = 'Fzf'
+nnoremap <leader>h :FzfHistory<CR>
+nnoremap <leader>s :FzfFiles<CR>
+nnoremap <leader>t :FzfWindows<CR>
+nnoremap <leader>g :FzfGFile<CR>
+nnoremap <leader>b :FzfBuffers<CR>
 
 set runtimepath+=$HOME/.vim/bundle/colorizer.vim
 
