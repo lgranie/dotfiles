@@ -27,3 +27,5 @@
   path = ~/.config/local/gitconfig
 [color]
 	ui = auto
+[init]
+	defaultBranch = main
