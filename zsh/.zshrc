@@ -99,3 +99,8 @@ if [ -f /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
   source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 fi
 
+# Load zsh-autosuggestions; should be last.
+if [ -f /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh  ]; then
+  source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
+fi
+
