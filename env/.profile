@@ -27,3 +27,5 @@ export GPG_TTY=$(tty)
  
 # local envrc
 [ -f ${XDG_CONFIG_HOME}/local/profile ] && . ${XDG_CONFIG_HOME}/local/profile
+
+export WAYLAND_DISPLAY=$(basename $(fdfind --type s 'wayland-\d$' ${XDG_RUNTIME_DIR}))
