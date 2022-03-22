@@ -29,7 +29,9 @@ alias v='vim'
 alias cuol='curl -OL'
 
 function bi () {
-  beet import "${1}"
+  dir="$(fd --type d . /media/torrents/downloading | sort | fzf --delimiter / --with-nth -1)"
+  beet import "${dir}"
+  rm -rI "${dir}"
 }
 
 function stf () {
