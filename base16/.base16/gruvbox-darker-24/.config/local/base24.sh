@@ -28,13 +28,7 @@ color21="EB/DB/B2" # Base 06
 color_foreground="D5/C4/A1" # Base 05
 color_background="28/28/28" # Base 00
 
-if [ -n "$TMUX" ]; then
-  # Tell tmux to pass the escape sequences through
-  # (Source: http://permalink.gmane.org/gmane.comp.terminal-emulators.tmux.user/1324)
-  put_template() { printf '\033Ptmux;\033\033]4;%d;rgb:%s\033\033\\\033\\' $@; }
-  put_template_var() { printf '\033Ptmux;\033\033]%d;rgb:%s\033\033\\\033\\' $@; }
-  put_template_custom() { printf '\033Ptmux;\033\033]%s%s\033\033\\\033\\' $@; }
-elif [ "${TERM%%[-.]*}" = "screen" ]; then
+if [ "${TERM%%[-.]*}" = "screen" ]; then
   # GNU screen (screen, screen-256color, screen-256color-bce)
   put_template() { printf '\033P\033]4;%d;rgb:%s\007\033\\' $@; }
   put_template_var() { printf '\033P\033]%d;rgb:%s\007\033\\' $@; }
