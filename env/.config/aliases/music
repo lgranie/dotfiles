@@ -1,0 +1,43 @@
+#-----------------------
+# Mucic library
+#-----------------------
+
+function bi () {
+  dir="$(fd --type d . /media/torrents/downloading | sort | fzf --delimiter / --with-nth -1)"
+  beet import "${dir}"
+  rm -rI "${dir}"
+}
+
+function stf () {
+  CURRENT_DIR=$(pwd)
+  SPLIT_DIR="${1}"
+
+  find "${CURRENT_DIR}/${SPLIT_DIR}" -name "*cue" -type f | while read c; do
+    echo ${c}
+    APE_FILE=$(basename "${c}" cue)ape
+    FLAC_FILE=$(basename "${c}" cue)flac
+    CUE_DIR=$(dirname "${c}")
+    
+    pushd "${CUE_DIR}"
+    
+    # convert ape to flac
+    [[ -f "${APE_FILE}" ]] && ffmpeg -i "${APE_FILE}" -y "${FLAC_FILE}" < /dev/null
+    
+    # split flac
+    mkdir -p "$(basename ${c} .cue)"
+    [[ -f "${FLAC_FILE}" ]] && shnsplit -O always -d "$(basename ${c} .cue)" -t %n-%t -o flac -f "$(basename ${c})" "${FLAC_FILE}"
+
+    # tag split flac
+    cuetag "$(basename ${c})" "$(basename ${c} .cue)"/*
+    rm -rf "$(basename ${c} .cue)"**/00-pregap.flac
+    
+    popd; 
+  done
+}
+
+function resample-beet () {
+  beet ls -p bitdepth:24 | while read f; do
+    mkdir -p "resampled/$(basename "$(dirname "${f}")")"
+    sox -S -G "${f}" -r 48000 -b 16 "./resampled/$(basename "$(dirname "${f}")")/$(basename "${f}")"
+  done
+}

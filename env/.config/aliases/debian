@@ -1,0 +1,11 @@
+# -----------------------
+# Debian Functions & Aliases
+# -----------------------
+
+function udist () {
+  sudo apt update &&
+  sudo apt -u upgrade &&
+  sudo apt --purge --assume-yes autoremove &&
+  sudo apt clean &&
+  deborphan;
+}

@@ -1,0 +1,11 @@
+# -----------------------
+# Tmux Functions
+# -----------------------
+
+function start_dev () {
+  cd $1 && \
+  export WORSPACE=$1 && \
+  tmux send-keys 'vim' C-m \; \
+  split-window -v -p 16 \; \
+  select-pane -t 1 \;
+}

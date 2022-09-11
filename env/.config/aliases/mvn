@@ -1,0 +1,8 @@
+#-----------------------
+# Apache Maven
+#-----------------------
+
+alias mvnd='mvn -offline -T 1C install -DskipTests'
+alias mci='mvn -T 1C clean install'
+alias msbd='mvn -T 1C spring-boot:run -Dspring-boot.run.jvmArguments="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005" -XX:+TieredCompilation -XX:TieredStopAtLevel=1'
+alias msp='mvn com.github.ekryd.sortpom:sortpom-maven-plugin:sort -Pinclude000_Localdev,tomcat -T 1C -Dsort.sortDependencies=scope,groupId,artifactId -Dsort.sortPlugins=groupId,artifactId -Dsort.sortProperties=true -Dsort.sortModules=true -Dsort.sortExecutions=true -Dsort.createBackupFile=false -Dsort.expandEmptyElements=false -Dsort.keepBlankLines=false -Dsort.indentBlankLines=true -Dtycho.mode=maven tidy:pom'

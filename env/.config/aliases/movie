@@ -1,0 +1,19 @@
+#-----------------------
+# Movie
+#-----------------------
+
+function find_downloaded_videos {
+  fd -e mp4 -e mkv . '/media/torrents/downloaded' | sort | fzf --delimiter / --with-nth -1
+}
+
+function plm {
+  #sudo su -P -s /bin/bash -c "export XDG_RUNTIME_DIR=/run/user/$(id -u vlcd) && mpv --sub-auto=all $1" vlcd
+  movie="$(find_downloaded_videos)"
+  echo ${movie}
+  mpv --sub-auto=all "${movie}"
+}
+
+function pls {
+  #sudo su -P -s /bin/bash -c "export XDG_RUNTIME_DIR=/run/user/$(id -u vlcd) && mpv --sub-auto=exact $1" vlcd
+  mpv --sub-auto=exact "$(find_downloaded_videos)"
+}
