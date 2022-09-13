@@ -34,12 +34,16 @@
 [submodule "vim/.vim/bundle/vim-lsp-groovy"]
 	path = vim/.vim/bundle/vim-lsp-groovy
 	url = https://github.com/lgranie/vim-lsp-groovy.git
-[submodule "nvim/.config/nvim/pack/plugins/start/telescope.nvim"]
-	path = nvim/.config/nvim/pack/plugins/start/telescope.nvim
-	url = https://github.com/nvim-telescope/telescope.nvim.git
-[submodule "nvim/.config/nvim/pack/plugins/start/plenary.nvim"]
-	path = nvim/.config/nvim/pack/plugins/start/plenary.nvim
+[submodule "nvim/.config/nvim/pack/plugins/start/plenary"]
+	path = nvim/.config/nvim/pack/plugins/start/plenary
 	url = https://github.com/nvim-lua/plenary.nvim.git
-[submodule "nvim/.config/nvim/pack/plugins/start/numbertoggle.vim"]
-	path = nvim/.config/nvim/pack/plugins/start/numbertoggle.vim
-	url = git@github.com:jeffkreeftmeijer/vim-numbertoggle.git
+[submodule "nvim/.config/nvim/pack/plugins/start/telescope"]
+	path = nvim/.config/nvim/pack/plugins/start/telescope
+	url = https://github.com/nvim-telescope/telescope.nvim.git
+[submodule "nvim/.config/nvim/pack/plugins/start/numbertoggle"]
+	path = nvim/.config/nvim/pack/plugins/start/numbertoggle
+	url = https://github.com/jeffkreeftmeijer/vim-numbertoggle.git
+[submodule "nvim/.config/nvim/pack/plugins/start/tmux"]
+	path = nvim/.config/nvim/pack/plugins/start/tmux
+  url = https://github.com/aserowy/tmux.nvim.git
+  branch = main
