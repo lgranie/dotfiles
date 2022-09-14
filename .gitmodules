@@ -47,3 +47,6 @@
 	path = nvim/.config/nvim/pack/plugins/start/tmux
   url = https://github.com/aserowy/tmux.nvim.git
   branch = main
+[submodule "nvim/.config/nvim/pack/plugins/start/nvim-lspconfig"]
+	path = nvim/.config/nvim/pack/plugins/start/nvim-lspconfig
+	url = https://github.com/neovim/nvim-lspconfig.git
