@@ -1,4 +1,4 @@
- # The XDG_ variables definitions:
+# The XDG_ variables definitions:
 # https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html#variables
 
 ## User directories
@@ -15,6 +15,9 @@ export FZF_DEFAULT_OPTS="--layout=reverse --border"
 export NPM_CONFIG_USERCONFIG="${XDG_CONFIG_HOME}/npm/npmrc"
 export NPM_PACKAGES="${XDG_CONFIG_HOME}/npm/global"
 export PATH="${NPM_PACKAGES}/bin:$PATH"
+
+# gradle
+export PATH="${HOME}/opt/gradle-7.5.1/bin:$PATH"
 
 # history
 export HISTFILE="${XDG_DATA_HOME}/history"
