@@ -17,6 +17,7 @@ alias df='df -h | grep -v ^none | ( read header ; echo "$header" ; sort -k 6 )'
 alias env='env | sort'
 alias dmesg='sudo dmesg -T'
 alias fd='/usr/lib/cargo/bin/fd'
+alias t='tree --du -h -L'
 
 alias unzip='7z x'
 
