@@ -152,7 +152,7 @@ function udist () {
 }
 
 function find_downloaded_videos {
-  fd -e mp4 -e mkv . '/media/downloads' | sort | fzf --delimiter / --with-nth -1
+  fd -e mp4 -e mkv . '/media/downloads' | sort | fzf +s --delimiter / --with-nth -1
 }
 
 function plm {
