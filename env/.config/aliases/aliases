@@ -19,7 +19,7 @@ alias dmesg='sudo dmesg -T'
 alias fd='/usr/lib/cargo/bin/fd'
 alias t='tree --du -h -L'
 
-alias unzip='7z x'
+alias uz='7z x'
 
 function d2u () {
   sed -i 's/\r//' $1
