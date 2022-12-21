@@ -49,3 +49,6 @@
 [submodule "nvim/.local/share/nvim/site/pack/plugins/start/fugitive.nvim"]
 	path = nvim/.local/share/nvim/site/pack/plugins/start/fugitive.nvim
 	url = https://github.com/tpope/vim-fugitive.git
+[submodule "nvim/.local/share/nvim/site/pack/plugins/start/lspconfig.nvim"]
+	path = nvim/.local/share/nvim/site/pack/plugins/start/lspconfig.nvim
+	url = https://github.com/neovim/nvim-lspconfig.git
