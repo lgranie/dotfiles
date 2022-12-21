@@ -34,3 +34,18 @@
 [submodule "vim/.vim/bundle/vim-lsp-groovy"]
 	path = vim/.vim/bundle/vim-lsp-groovy
 	url = https://github.com/lgranie/vim-lsp-groovy.git
+[submodule "nvim/.local/share/nvim/site/pack/plugins/start/plenary.nvim"]
+	path = nvim/.local/share/nvim/site/pack/plugins/start/plenary.nvim
+	url = https://github.com/nvim-lua/plenary.nvim.git
+[submodule "nvim/.local/share/nvim/site/pack/plugins/start/telescope.nvim"]
+	path = nvim/.local/share/nvim/site/pack/plugins/start/telescope.nvim
+	url = https://github.com/nvim-telescope/telescope.nvim.git
+[submodule "nvim/.local/share/nvim/site/pack/plugins/start/treesitter.nvim"]
+	path = nvim/.local/share/nvim/site/pack/plugins/start/treesitter.nvim
+	url = https://github.com/nvim-treesitter/nvim-treesitter.git
+[submodule "nvim/.local/share/nvim/site/pack/plugins/start/tmux.nvim"]
+	path = nvim/.local/share/nvim/site/pack/plugins/start/tmux.nvim
+	url = https://github.com/aserowy/tmux.nvim.git
+[submodule "nvim/.local/share/nvim/site/pack/plugins/start/fugitive.nvim"]
+	path = nvim/.local/share/nvim/site/pack/plugins/start/fugitive.nvim
+	url = https://github.com/tpope/vim-fugitive.git
