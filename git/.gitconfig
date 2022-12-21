@@ -29,3 +29,21 @@
 	ui = auto
 [init]
 	defaultBranch = main
+[alias]
+  # submodule
+  sch = "! ( git ch ${1} ) && git submodule foreach --recursive '\
+      br=$(git config --file $toplevel/.gitmodules submodule.$name.branch) && \
+      git ch ${br}' && \
+    git st"
+  scb = "! git submodule foreach --recursive '\
+      br=$(git config --file $toplevel/.gitmodules submodule.$name.branch) && \
+      git cb' && \
+    git st"
+  scl = submodule foreach --recursive git cl
+  sgcpa = submodule foreach --recursive git gcpa
+  sf = fetch --prune --force origin --tags --recurse-submodules --jobs=2
+  st = status
+  cl = "! git clean -f -d -x --quiet"
+  ch = "! (git checkout --recurse-submodules --force ${1} && git pull --rebase) || git checkout --recurse-submodules --force --track origin/${1}"
+  gcpa = "! git cl && git gc --prune --aggressive"
+  cb = "! git branch -D $(git for-each-ref --format '%(refname:short) %(upstream:track)' | awk '$2 == \"[gone]\" {print $1}') || echo \"nothing to delete\"" 
