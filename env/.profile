@@ -13,7 +13,7 @@ export FZF_DEFAULT_OPTS="--layout=reverse --border"
 
 # npm
 export NPM_CONFIG_USERCONFIG="${XDG_CONFIG_HOME}/npm/npmrc"
-export NPM_PACKAGES="${XDG_CONFIG_HOME}/npm/global"
+export NPM_PACKAGES="${XDG_DATA_HOME}/npm/global"
 export PATH="${NPM_PACKAGES}/bin:$PATH"
 
 # gradle
