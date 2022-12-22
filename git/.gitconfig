@@ -39,6 +39,9 @@
       br=$(git config --file $toplevel/.gitmodules submodule.$name.branch) && \
       git cb' && \
     git st"
+  sup = "! git submodule foreach '\
+      br=$(git config --file $toplevel/.gitmodules submodule.$name.branch) && \
+      git ch ${br}'"
   scl = submodule foreach --recursive git cl
   sgcpa = submodule foreach --recursive git gcpa
   sf = fetch --prune --force origin --tags --recurse-submodules --jobs=2
