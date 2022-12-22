@@ -103,5 +103,6 @@ fi
 if [ -f /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh  ]; then
   source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 fi
-bindkey '^ ' forward-word
+bindkey '^[[1;5C' forward-word
+bindkey '^[[1;5D' backward-word
 
