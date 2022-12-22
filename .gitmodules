@@ -1,54 +1,72 @@
 [submodule "vim/.vim/bundle/vim-tmux-navigator"]
 	path = vim/.vim/bundle/vim-tmux-navigator
-	url = https://github.com/christoomey/vim-tmux-navigator.git
+  url = https://github.com/christoomey/vim-tmux-navigator.git
+  branch = master
 [submodule "vim/.vim/bundle/vim-lsp-java"]
 	path = vim/.vim/bundle/vim-lsp-java
 	url = https://github.com/lgranie/vim-lsp-java.git
+  branch = master
 [submodule "vim/.vim/bundle/asyncomplete.vim"]
 	path = vim/.vim/bundle/asyncomplete.vim
 	url = https://github.com/prabirshrestha/asyncomplete.vim.git
+  branch = master
 [submodule "vim/.vim/bundle/asyncomplete-lsp.vim"]
 	path = vim/.vim/bundle/asyncomplete-lsp.vim
 	url = https://github.com/prabirshrestha/asyncomplete-lsp.vim.git
+  branch = master
 [submodule "vim/.vim/bundle/vim-jdb"]
 	path = vim/.vim/bundle/vim-jdb
 	url = https://gitlab.com/Dica-Developer/vim-jdb.git
+  branch = master
 [submodule "vim/.vim/bundle/fzf.vim"]
 	path = vim/.vim/bundle/fzf.vim
 	url = https://github.com/junegunn/fzf.vim.git
+  branch = master
 [submodule "vim/.vim/bundle/vim-lsp-bash"]
 	path = vim/.vim/bundle/vim-lsp-bash
 	url = https://github.com/lgranie/vim-lsp-bash.git
+  branch = master
 [submodule "git/.config/forgit"]
 	path = git/.config/forgit
 	url = https://github.com/wfxr/forgit.git
+  branch = master
 [submodule "vim/.vim/bundle/vim-lsp"]
 	path = vim/.vim/bundle/vim-lsp
 	url = https://github.com/prabirshrestha/vim-lsp
+  branch = master
 [submodule "vim/.vim/bundle/colorizer.vim"]
 	path = vim/.vim/bundle/colorizer.vim
 	url = https://github.com/chrisbra/Colorizer.git
+  branch = master
 [submodule "vim/.vim/bundle/vimwiki"]
 	path = vim/.vim/bundle/vimwiki
 	url = https://github.com/vimwiki/vimwiki.git
+  branch = dev
 [submodule "vim/.vim/bundle/vim-lsp-groovy"]
 	path = vim/.vim/bundle/vim-lsp-groovy
 	url = https://github.com/lgranie/vim-lsp-groovy.git
+  branch = master
 [submodule "nvim/.local/share/nvim/site/pack/plugins/start/plenary.nvim"]
 	path = nvim/.local/share/nvim/site/pack/plugins/start/plenary.nvim
-	url = https://github.com/nvim-lua/plenary.nvim.git
+  url = https://github.com/nvim-lua/plenary.nvim.git
+  branch = master
 [submodule "nvim/.local/share/nvim/site/pack/plugins/start/telescope.nvim"]
 	path = nvim/.local/share/nvim/site/pack/plugins/start/telescope.nvim
 	url = https://github.com/nvim-telescope/telescope.nvim.git
+  branch = master
 [submodule "nvim/.local/share/nvim/site/pack/plugins/start/treesitter.nvim"]
 	path = nvim/.local/share/nvim/site/pack/plugins/start/treesitter.nvim
 	url = https://github.com/nvim-treesitter/nvim-treesitter.git
+  branch = master
 [submodule "nvim/.local/share/nvim/site/pack/plugins/start/tmux.nvim"]
 	path = nvim/.local/share/nvim/site/pack/plugins/start/tmux.nvim
 	url = https://github.com/aserowy/tmux.nvim.git
+  branch = main
 [submodule "nvim/.local/share/nvim/site/pack/plugins/start/fugitive.nvim"]
 	path = nvim/.local/share/nvim/site/pack/plugins/start/fugitive.nvim
 	url = https://github.com/tpope/vim-fugitive.git
+  branch = master
 [submodule "nvim/.local/share/nvim/site/pack/plugins/start/lspconfig.nvim"]
 	path = nvim/.local/share/nvim/site/pack/plugins/start/lspconfig.nvim
 	url = https://github.com/neovim/nvim-lspconfig.git
+  branch = master
