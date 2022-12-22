@@ -25,6 +25,8 @@ export HISTFILE="${XDG_DATA_HOME}/history"
 # sign git commit with gpg
 export GPG_TTY=$(tty)
 
+export EDITOR=nvim
+
 # aliases
 [ -d ${XDG_CONFIG_HOME}/aliases ] && for a in ${XDG_CONFIG_HOME}/aliases/*;do . $a;done
 
