@@ -3,7 +3,7 @@
 #-----------------------
 
 function bi () {
-  dir="$(fd --type d . /media/torrents/downloading | sort | fzf --delimiter / --with-nth -1)"
+  dir="$(fd --type d . /media/torrents/downloaded | sort | fzf --delimiter / --with-nth -2)"
   beet import "${dir}"
   rm -rI "${dir}"
 }
