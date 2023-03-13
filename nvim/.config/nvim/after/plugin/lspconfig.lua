@@ -25,3 +25,9 @@ bashls.setup {
   filetypes = { "sh", "zsh" }
 }
 
+local rustls = require('lspconfig')['rust_analyzer']
+rustls.setup {
+  cmd = {
+    '/home/lgranie/opt/rust/toolchains/stable-x86_64-unknown-linux-gnu/bin/rust-analyzer'
+  }
+}

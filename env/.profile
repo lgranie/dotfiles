@@ -19,6 +19,11 @@ export PATH="${NPM_PACKAGES}/bin:$PATH"
 # gradle
 export PATH="${HOME}/opt/gradle-7.5.1/bin:$PATH"
 
+# rust
+export RUSTUP_HOME="${HOME}/opt/rust"
+export CARGO_HOME="${HOME}/opt/rust"
+export PATH="$PATH:${RUSTUP_HOME}/bin"
+
 # history
 export HISTFILE="${XDG_DATA_HOME}/history"
 

@@ -1,6 +1,6 @@
 -- vim.opt.termguicolors = true
 
-vim.opt.guicursor = ""
+-- vim.opt.guicursor = ""
 
 vim.g.netrw_browse_split = 0
 vim.g.netrw_banner = 0
