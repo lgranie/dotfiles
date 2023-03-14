@@ -22,7 +22,7 @@
 [core]
   fileMode = false
   autocrlf = input
-  editor = vim
+  editor = nvim
 [include]
   path = ~/.config/local/gitconfig
 [color]

@@ -27,6 +27,7 @@ function d2u () {
 
 alias v='nvim'
 alias vi='nvim'
+alias vim='nvim'
 
 alias cuol='curl -OL'
 
