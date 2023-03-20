@@ -94,6 +94,9 @@ if [ -f /usr/share/doc/fzf/examples/key-bindings.zsh ]; then
   source /usr/share/doc/fzf/examples/key-bindings.zsh
 fi 
 
+# zoxide
+command -v zoxide >/dev/null 2>&1 &&  eval "$(zoxide init zsh)"
+
 # Load zsh-syntax-highlighting; should be last.
 if [ -f /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
   source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
@@ -105,4 +108,5 @@ if [ -f /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh  ]; then
 fi
 bindkey '^[[1;5C' forward-word
 bindkey '^[[1;5D' backward-word
+
 
