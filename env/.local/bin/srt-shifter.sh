@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 set -o errexit -o noclobber -o nounset -o pipefail
 
