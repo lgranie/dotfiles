@@ -31,12 +31,6 @@ alias vim='nvim'
 
 alias cuol='curl -OL'
 
-function bi () {
-  dir="$(fd --type d . /media/downloads | sort | fzf --delimiter / --with-nth -2)"
-  beet import "${dir}"
-  rm -rI "${dir}"
-}
-
 function stf () {
   CURRENT_DIR=$(pwd)
   SPLIT_DIR="${1}"
