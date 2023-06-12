@@ -7,6 +7,5 @@ function udist () {
   sudo apt -u upgrade &&
   sudo apt --purge --assume-yes autoremove &&
   sudo apt clean &&
-  sudo rm -rf /var/lib/apt/lists/* &&
   deborphan;
 }
