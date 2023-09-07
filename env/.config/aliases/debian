@@ -7,5 +7,5 @@ function udist () {
   sudo apt -u upgrade &&
   sudo apt --purge --assume-yes autoremove &&
   sudo apt clean &&
-  deborphan;
+  sudo apt remove --purge $(deborphan);
 }
