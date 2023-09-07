@@ -1,5 +1,6 @@
 [user]
-  name = Laurent Granié
+	name = Laurent Granié
+	email = laurent.granie@gmail.com
 [status]
   submoduleSummary = true
 [diff]
